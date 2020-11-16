@@ -22,12 +22,18 @@
           <p>Your shopping bag is currently empty</p>
           <p>Shipping</p>
           <p>Total</p>
-          <input type="radio" id="Visa" name="Visa" value="Visa">
-          <input type="radio" id="PayPal" name="Paypal" value="PayPal">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name"><br>
-          <label for="adress">Adress</label><br>
-          <input type="text" id="adress" name="adress">
+          <form action="">
+            <input type="radio" id="Visa" name="payment" value="visa">
+            <label for="visa">Visa</label><br>
+            <input type="radio" id="PayPal" name="payment" value="paypal">
+            <label for="paypal">PayPal</label><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="adress">Adress</label><br>
+            <input type="text" id="adress" name="adress">
+
+          </form>
+          
           <button>Order</button>
 
       </main>
