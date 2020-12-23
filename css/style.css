@@ -1,6 +1,7 @@
 
 
 @font-face {
+    src: url();/* *!fix */
     font-family: 'Roboto', sans-serif;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -9,20 +10,13 @@ body {
     box-sizing: border-box;
 }
 
+
 img {
     max-height: 200px;
 }
 
-#hero-image{
-    width: 100%;
-    height: auto;
 
-}
-/* #logo-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
+
 nav {
     background-color: #E8EDEE;   
 }
@@ -73,7 +67,7 @@ p{
     width: 6rem;
 
 }
-/*CENTERING BUTTONS*/*! Not working as expected
+/*CENTERING BUTTONS*//*! Not working as expected used on weather conditions*/
 .container-center {
     margin: auto;
     display: block;
@@ -109,4 +103,42 @@ p{
     padding-bottom: 0rem;
     min-width: 25rem;
     max-width: 40rem;
+}
+/*FOOTER*/
+
+
+
+.first-footer-list{
+    display: inline;
+    float: left;
+    margin: 1rem 2rem 3rem 4rem;  
+    padding:0;
+    position: relative;
+}
+.first-footer-list li{
+    margin-bottom: 0.2rem;
+}
+.socials-footer{
+    margin: 5rem auto;
+    padding: 0%;
+    align-content: center;
+    display: inline;
+    position: absolute;
+    transform: translate(50%, 50%);
+
+
+}
+.socials-footer li{
+    
+    display: inline;
+    padding: 0 1rem; 
+}
+
+.second-footer-list {
+    float: right;
+    margin: 1rem 4rem 3rem 2rem; 
+     
+}
+.second-footer-list li{
+    margin-bottom: 0.2rem;
 }
