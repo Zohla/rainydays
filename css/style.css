@@ -1,4 +1,10 @@
 
+/* Explenation of comments*/
+
+/*!:Problems to be fixed */
+/*TODO: add this, change that*/
+/*?: Questions I want to dig deeper in*/
+
 
 @font-face {
     src: url();/* *!fix */
@@ -137,7 +143,6 @@ p{
 .popular-styles {
     display: flex;
     justify-content: center;
-    /* max-width: 1130px; */
 }
 .jacket:not(:last-child){
     margin-right: 5rem;
@@ -152,11 +157,9 @@ p{
     border: solid  #707070 .5px;
     display: flex;
     flex-direction: column;
-    
 }
 .jacket-short-info:not(:last-child) {
     margin-right: 5rem;
-
 }
 .jacket-short-info p{
     align-self: center;   
@@ -179,7 +182,7 @@ p{
     background-size: cover;
     min-height: 25rem;
     position: relative;
-    max-width: 2000px; /* change this using a media query for large screens? */
+    max-width: 2000px;
 }
 #index-about-text {
     color: #E8EDEE;
@@ -193,56 +196,94 @@ p{
     min-width: 25rem;
     max-width: 40rem;
 }
+
+
 /*FOOTER*/
-
-
+footer{
+    display: flex;
+    justify-content: space-around;
+}
 
 .first-footer-list{
-    display: inline;
-    float: left;
-    margin: 1rem 2rem 3rem 4rem;  
-    padding:0;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .first-footer-list li{
-    margin-bottom: 0.2rem;
+    margin: .5rem;
+    
 }
 .socials-footer{
-    margin: 5rem auto;
-    padding: 0%;
-    align-content: center;
-    display: inline;
-    position: absolute;
-    transform: translate(50%, 50%);
-
-
+    display: flex;
+   
 }
 .socials-footer li{
+    margin: 3rem 3rem 0 0;
     
-    display: inline;
-    padding: 0 1rem; 
 }
 
 .second-footer-list {
-    float: right;
-    margin: 1rem 4rem 3rem 2rem; 
-     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
 }
 .second-footer-list li{
-    margin-bottom: 0.2rem;
+    margin: .5rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media(max-width: 1200px) {
+    
+    .nav-logo {
+        order: -1;  /*? This can probably be moved to #logo*/          
+    }
+    #logo {
+        width: 10rem; /* Had to make an id to override the size */
+    }
+    /*TODO Make a hamburger menu for smaller screen sizes*/
     .header-elements {
-        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .nav-element {
+        display: none;
+    }
+    .hero {
+        background-size: contain;
+        /* min-height: 15rem; */*!This makes the problem with the extra height under the picture go away, but fixes the pictures size and makes it nonresponsive between the breakpoints */   
+    }
+    
+    .center-content {
+        display: none;
+    }
+    .popular-styles {
+        flex-wrap: wrap;
+    }
+    .jacket { /*TODO jackets need more info and to be centered*/
+        margin-bottom: 1rem;
+    
+    }
+    .jacket-4 {
+        margin-right: 5rem;
+
 
     }
-    .logo {
-        order:-1;
+    .jacket-info-container{
+        display: none;
     }
+    footer {
+        align-items: flex-start;
+    }
+
+    .socials-footer {
+        flex-direction: column;
+    }    
+}
+@media only screen and (max-width:600px) {
+
 }
 
-/* ABOUT */
+/* ABOUT-PAGE */
 .about-picture{
     max-height: 75rem;
 }
