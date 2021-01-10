@@ -202,6 +202,8 @@ p{
 footer{
     display: flex;
     justify-content: space-around;
+    background-color: #3F626A ;
+    color: #0A3641;
 }
 
 .first-footer-list{
@@ -279,7 +281,7 @@ footer{
         flex-direction: column;
     }    
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:600px) { /*TODO Move stuff from other mediaquery to this one. I can keep more in screen sizes between 600 and 1200px*/
 
 }
 
