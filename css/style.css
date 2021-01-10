@@ -8,6 +8,11 @@
 
 body {
     box-sizing: border-box;
+    max-width: 1770px;
+    margin: auto;
+}
+main{
+    background-color: #E8EDEE;
 }
 
 
@@ -16,19 +21,32 @@ img {
 }
 
 
-
+/* NAVIGATION */
 nav {
     background-color: #E8EDEE;   
+    
+}
+
+.header-elements {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-element {
     text-transform: uppercase;
-    display: inline;
-    margin-right: 3rem;
+    /* display: inline; */
+    /* flex-direction: row; */
+    align-self: end;
+    margin:1rem 3rem 0 0;
+    
 }
+
 
 a {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3 {
+    font-size: 30px;
 }
 ul {
     list-style: none;
@@ -54,34 +72,105 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 50rem;
+    max-width: 1770px;
 }
 .button3 {
     text-transform: uppercase;
     display: inline;
-    margin:3rem;
+    margin:3rem; 
     color: #E8EDEE;
     background-color: #0A3641;
     border-color: #E8EDEE;
     border-style: solid;
     height: 2rem;
     width: 6rem;
+    
 
 }
-/*CENTERING BUTTONS*//*! Not working as expected used on weather conditions*/
-.container-center {
-    margin: auto;
-    display: block;
-    
-}
+
+
 .center-content {
-    margin: 0 5% 0 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #0A3641 ;
+    
     
 }
-/*ABOU-SECTION HOME PAGE*/
+
+.weather-conditon-pic{
+    height: 10rem;
+    width: 10rem;
+    margin: 5rem 5rem 5rem 0;
+    border: solid  #707070 1px;
+    position: relative;
+    background-size: cover;
+}
+.weather-condition{
+    /* margin: 10rem; */ 
+    position: absolute;
+    left:-15px;
+    bottom: 17px;
+   
+}
+.rain {
+    margin-left: 5rem;
+    background-image: url(../images/rain.jpg);
+    
+}
+.snow {
+    background-image: url(../images/snow.jpg);
+}
+.extreme {
+    background-image: url(../images/extreme.jpg);
+}
+.urban{
+    background-image: url(../images/urban.jpg);
+}
+/*POPULAR STYLES INDEX*/
+.popular-styles-h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #DF6800;
+    text-transform: uppercase;
+
+}
+.popular-styles {
+    display: flex;
+    justify-content: center;
+    /* max-width: 1130px; */
+}
+.jacket:not(:last-child){
+    margin-right: 5rem;
+}
+.jacket-info-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.jacket-short-info{
+    width: 140px;
+    border: solid  #707070 .5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.jacket-short-info:not(:last-child) {
+    margin-right: 5rem;
+
+}
+.jacket-short-info p{
+    align-self: center;   
+}
+.jacket-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*ABOUt-SECTION INDEX*/
 
 #index-about-picture {
     max-width: 100%;
-    height: auto;
+    max-height: 100px;
 }
 
 .index-about-container {
@@ -141,4 +230,19 @@ p{
 }
 .second-footer-list li{
     margin-bottom: 0.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-elements {
+        display: flex;
+
+    }
+    .logo {
+        order:-1;
+    }
+}
+
+/* ABOUT */
+.about-picture{
+    max-height: 75rem;
 }
