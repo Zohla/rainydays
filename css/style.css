@@ -25,6 +25,18 @@ main{
 img {
     max-height: 200px;
 }
+/* buttons */
+.button3 {
+    text-transform: uppercase;
+    display: inline;
+    margin:3rem; 
+    color: #E8EDEE;
+    background-color: #0A3641;
+    border-color: #E8EDEE;
+    border-style: solid;
+    height: 2rem;
+    width: 6rem;
+}
 
 
 /* NAVIGATION */
@@ -47,7 +59,7 @@ nav {
     
 }
 
-
+/* text */
 a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -79,21 +91,27 @@ p{
     background-size: cover;
     min-height: 50rem;
     max-width: 1770px;
+    display: flex;
+    justify-content: space-around;
 }
-.button3 {
-    text-transform: uppercase;
-    display: inline;
-    margin:3rem; 
-    color: #E8EDEE;
-    background-color: #0A3641;
-    border-color: #E8EDEE;
-    border-style: solid;
-    height: 2rem;
-    width: 6rem;
+
+.women-pic {
+    background-image: url(../images/woman.png);
+    background-repeat: no-repeat;
+    height:25rem;
+    width: 25rem;
+    align-self: center;
     
-
 }
+.men-pic {
+    background-image: url(../images/man.png);
+    background-repeat: no-repeat;
+    height:25rem;
+    width: 25rem;
+    align-self: center;
 
+   
+}
 
 .center-content {
     display: flex;
@@ -251,8 +269,25 @@ footer{
         display: none;
     }
     .hero {
+        
         background-size: contain;
         /* min-height: 15rem; */*!This makes the problem with the extra height under the picture go away, but fixes the pictures size and makes it nonresponsive between the breakpoints */   
+    }
+    #hero {
+        height: 15rem;
+    }
+    .women-pic{
+        height: 10rem;
+        width: 10rem;
+        background-size: cover;
+
+    }
+    .men-pic{
+        height: 10rem;
+        width: 10rem;
+        background-size: cover;
+
+
     }
     
     .center-content {
