@@ -7,9 +7,10 @@
 
 
 @font-face {
-    src: url();/* *!fix */
+   
     font-family: 'Roboto', sans-serif;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');/* *!fix */
 }
 header {
     background-color:#E8EDEE;
@@ -47,7 +48,7 @@ img {
 .hamburger-container {
     position: absolute;
     left: 2rem;
-    top: 2rem;
+    top: 1.5rem;
     float: right;
 }
 .hamburger-layer{
@@ -73,6 +74,7 @@ nav {
 
 .nav-element {
     text-transform: uppercase;
+    
     /* display: inline; */
     /* flex-direction: row; */
     align-self: end;
@@ -82,10 +84,11 @@ nav {
 
 /* text */
 a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Roboto;
 }
 h3 {
-    font-size: 30px;
+    font-size: 2rem;
+    font-weight: 300;
 }
 ul {
     list-style: none;
@@ -243,6 +246,7 @@ footer{
     justify-content: space-around;
     background-color: #3F626A ;
     color: #0A3641;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .first-footer-list{
