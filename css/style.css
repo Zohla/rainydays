@@ -11,6 +11,9 @@
     font-family: 'Roboto', sans-serif;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+header {
+    background-color:#E8EDEE;
+}
 
 body {
     box-sizing: border-box;
@@ -40,6 +43,24 @@ img {
 
 
 /* NAVIGATION */
+/*HAMBURGER-MENU*/
+.hamburger-container {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    float: right;
+}
+.hamburger-layer{
+    width: 35px;
+    height: 5px;
+    background-color: #0A3641;
+    margin: 6px 0;
+}
+
+#hamburger-menu, .hamburger-layer {
+    display: none;
+}
+
 nav {
     background-color: #E8EDEE;   
     
@@ -255,15 +276,18 @@ footer{
 @media(max-width: 1200px) {
     
     .nav-logo {
-        order: -1;  /*? This can probably be moved to #logo*/          
+           
     }
     #logo {
         width: 10rem; /* Had to make an id to override the size */
+        justify-self: center; 
     }
-    /*TODO Make a hamburger menu for smaller screen sizes*/
+    .hamburger-layer{
+        display: block;
+    }
+    
     .header-elements {
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        justify-content: center;
     }
     .nav-element {
         display: none;
@@ -271,11 +295,9 @@ footer{
     .hero {
         
         background-size: contain;
-        /* min-height: 15rem; */*!This makes the problem with the extra height under the picture go away, but fixes the pictures size and makes it nonresponsive between the breakpoints */   
+        /* min-height: 15rem; *//*!This makes the problem with the extra height under the picture go away, but fixes the pictures size and makes it nonresponsive between the breakpoints */   
     }
-    #hero {
-        height: 15rem;
-    }
+    
     .women-pic{
         height: 10rem;
         width: 10rem;
@@ -317,7 +339,8 @@ footer{
     }    
 }
 @media only screen and (max-width:600px) { /*TODO Move stuff from other mediaquery to this one. I can keep more in screen sizes between 600 and 1200px*/
-
+    .buy-gender{
+        margin-top: 2rem;
 }
 
 /* ABOUT-PAGE */
