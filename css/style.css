@@ -48,6 +48,26 @@ img {
     width: 6rem;
 }
 
+.button-3-clear {
+    text-transform: uppercase;
+    color:#E8EDEE; 
+    background-color:#0A3641;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.25rem;
+    /* opacity: .34; */ /*?How can I make the button have opacity w.o affecting text?*/
+    
+}
+
+.button-new-arrivals {
+    color: #DF6800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+
+}
 
 /* NAVIGATION */
 /*HAMBURGER-MENU*/
@@ -124,7 +144,19 @@ p{
     display: flex;
     justify-content: space-around;
 }
+.buy-gender{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.button-3-clear{
+    margin-left: auto;
+    margin-right: auto;
 
+}
+.button-new-arrivals{
+    margin-top: 15rem;
+}
 .women-pic {
     background-image: url(../images/woman.png);
     background-repeat: no-repeat;
@@ -317,17 +349,11 @@ footer{
     }
     
     .buy-gender{
-        height: 10rem;
-        width: 10rem;
+        height: 15rem;
+        width: 15rem;
         background-size: cover;
-
     }
-    /* .men-pic{
-        height: 10rem;
-        width: 10rem;
-        background-size: cover;
-
-    } */
+    
     
     .center-content {
         display: none;
@@ -355,9 +381,47 @@ footer{
         flex-direction: column;
     }    
 }
-@media only screen and (max-width:600px) { /*TODO Move stuff from other mediaquery to this one. I can keep more in screen sizes between 600 and 1200px*/
+@media(max-width: 780px){
+    .hero{
+        background-size: 100vw;
+        min-height: 30rem;
+        display: grid;
+        grid-template-columns:[first-c] 10% [second-c]25% [third-c] 20% [forth-c]25% [last-r] 10%;
+        grid-template-rows:[first-r] 25%[second-r] 25% [third-r]25%[forth-r] 25%;
+        grid-template-areas: 
+        ". . . . ."
+        ". . . . ."
+        ". women . men ."
+        ". . . . ."
+        
+        ;
+    }
     .buy-gender{
-        margin-top: 2rem;
-}
+        height: 10rem;
+        width: 10rem;
+        justify-self: start;
+        
+    }
+    .women-pic{
+        grid-area: women;
+    }
+    .men-pic {
+        grid-area: men;
+    }
+
 
 }
+@media only screen and (max-width:600px) { /*TODO Move stuff from other mediaquery to this one. I can keep more in screen sizes between 600 and 1200px*/
+    
+    .hero{
+        grid-template-areas: 
+        ". . . . ."
+        
+        ". . . . ."
+        ". . . . ."
+        "woman women . men men";
+    }
+    .buy-gender{
+        height: 8rem;
+        width: 8rem;
+    }
