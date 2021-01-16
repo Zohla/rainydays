@@ -56,9 +56,7 @@ img {
     width: 8rem;
     font-size: 1.25rem;
     border: solid 2px;
-    
-    /* opacity: .34; */ /*?How can I make the button have opacity w.o affecting text?*/
-    
+        
 }
 
 .button-new-arrivals {
@@ -70,6 +68,10 @@ img {
     font-weight: 100;
     border: solid 3px #E8EDEE;
 
+}
+/* icons */
+.social-icon{
+    font-size: 2rem;
 }
 
 /* NAVIGATION */
@@ -344,11 +346,6 @@ footer{
     }
     .nav-element {
         display: none;
-    }
-    .hero {
-        
-        background-size: contain;
-        /* min-height: 15rem; *//*!This makes the problem with the extra height under the picture go away, but fixes the pictures size and makes it nonresponsive between the breakpoints */   
     }
     
     .buy-gender{
