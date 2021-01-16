@@ -5,6 +5,12 @@
 /*TODO: add this, change that*/
 /*?: Questions I want to dig deeper in*/
 
+/*
+COLOURS
+main background-color: #E8EDEE
+dark text-color: #0A3641
+
+*/
 
 @font-face {
    
@@ -277,16 +283,24 @@ footer{
     margin: .5rem;
 }
 
+/* ABOUT-PAGE */
+.about-picture{
+    max-height: 75rem;
+}
+
 @media(max-width: 1200px) {
     
-    .nav-logo {
+  /*   .nav-logo {
            
-    }
+    } */
     #logo {
         width: 10rem; /* Had to make an id to override the size */
         justify-self: center; 
     }
     .hamburger-layer{
+        display: block;
+    }
+    #hamburger-menu:checked ~ nav{
         display: block;
     }
     
@@ -302,19 +316,18 @@ footer{
         /* min-height: 15rem; *//*!This makes the problem with the extra height under the picture go away, but fixes the pictures size and makes it nonresponsive between the breakpoints */   
     }
     
-    .women-pic{
+    .buy-gender{
         height: 10rem;
         width: 10rem;
         background-size: cover;
 
     }
-    .men-pic{
+    /* .men-pic{
         height: 10rem;
         width: 10rem;
         background-size: cover;
 
-
-    }
+    } */
     
     .center-content {
         display: none;
@@ -347,7 +360,4 @@ footer{
         margin-top: 2rem;
 }
 
-/* ABOUT-PAGE */
-.about-picture{
-    max-height: 75rem;
 }
