@@ -37,37 +37,40 @@ img {
     max-height: 200px;
 }
 /* buttons */
-.button3 {
+.button3, .button-3-clear{
     text-transform: uppercase;
-    display: inline;
-    margin:3rem; 
     color: #E8EDEE;
+    border: 2px solid #E8EDEE;
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+
+}
+.button3{ 
     background-color: #0A3641;
-    border-color: #E8EDEE;
-    border-style: solid;
     height: 2rem;
-    width: 6rem;
 }
 
 .button-3-clear {
-    text-transform: uppercase;
-    color:#E8EDEE; 
     background:rgba(0, 0, 0, .34);
-    height: 3rem;
-    width: 8rem;
+    height: 3rem; 
     font-size: 1.25rem;
-    border: solid 2px;
+    align-self: center;
+    padding-top: .7rem;
+    height: 2.5rem;
+    
         
 }
 
 .button-new-arrivals {
     color: #DF6800;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 5rem;
+    height: 3rem;
     width: 15rem;
     font-size: 1.5rem;
     font-weight: 100;
     border: solid 3px #E8EDEE;
+    padding-top: 1.3rem;
 
 }
 /* icons */
@@ -155,14 +158,16 @@ p{
     justify-content: center;
     flex-direction: column;
 }
-.button-3-clear{
+.button-3-clear .button3{
     margin-left: auto;
     margin-right: auto;
+    
 
 }
-.button-new-arrivals{
-    margin-top: 22rem;
+.new-arrivals-containter{
+    display: flex;
 }
+
 .women-pic {
     background-image: url(../images/woman.png);
     background-repeat: no-repeat;
@@ -181,7 +186,7 @@ p{
    
 }
 
-.center-content {
+.all-weather-conditions {
     display: flex;
     justify-content: center;
     background-color: #0A3641 ;
@@ -197,16 +202,19 @@ p{
     width: 10rem;
     margin: 5rem 5rem 5rem 0;
     border: solid  #707070 1px;
-    position: relative;
+    /* position: relative; */
     background-size: cover;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    
 }
 .weather-condition{
-    /* margin: 10rem; */ 
-    position: absolute;
-    left:-15px;
-    bottom: 17px;
+    align-self: center;
+    width: 7rem;
+    padding-top: .5rem;
+    
+    
+    
    
 }
 .rain {
@@ -231,7 +239,7 @@ p{
     text-transform: uppercase;
 
 }
-.popular-styles {
+.popular-styles-container {
     display: flex;
     justify-content: center;
 }
@@ -241,7 +249,7 @@ p{
 .jacket-info-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 .jacket-short-info{
     width: 140px;
@@ -365,7 +373,7 @@ footer{
         display: none;
     }
     .popular-styles {
-        flex-wrap: wrap;
+       /*  flex-wrap: wrap; */
     }
     .jacket { /*TODO jackets need more info and to be centered*/
         margin-bottom: 1rem;
