@@ -9,6 +9,7 @@
 COLOURS
 main background-color: #E8EDEE
 dark text-color: #0A3641
+Contrast-color:#DF6800
 
 */
 
@@ -187,6 +188,9 @@ p{
     
     
 }
+.new-arrivals-mobile{
+    display: none;
+}
 
 .weather-conditon-pic{
     height: 10rem;
@@ -195,6 +199,8 @@ p{
     border: solid  #707070 1px;
     position: relative;
     background-size: cover;
+    display: flex;
+    align-content: center;
 }
 .weather-condition{
     /* margin: 10rem; */ 
@@ -399,14 +405,36 @@ footer{
     .buy-gender{
         height: 10rem;
         width: 10rem;
-        justify-self: start;
+      
         
     }
     .women-pic{
         grid-area: women;
     }
+    .button-new-arrivals{
+        display: none;
+    }
     .men-pic {
         grid-area: men;
+    }
+    .new-arrivals-mobile{
+        display: block;
+        color:#E8EDEE ;
+        background-color: #0A3641;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        font-family: Roboto;
+        padding-bottom:1.34rem;
+        
+        
+        
+    }
+    .new-arrivals-mobile button{
+        width: 15rem;
+        color: #DF6800;
+        border:#E8EDEE solid 2px;
+
     }
 
 
@@ -424,5 +452,8 @@ footer{
     .buy-gender{
         height: 8rem;
         width: 8rem;
+    }
+    .button-new-arrivals{
+
     }
 }
