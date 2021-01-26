@@ -12,6 +12,16 @@ dark text-color: #0A3641
 Contrast-color:#DF6800
 
 */
+:root{
+    --light-color: #E8EDEE;
+    --dark-color: #0A3641;
+    --contrast-color: #DF6800;
+}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
 
 @font-face {
    
@@ -128,7 +138,7 @@ h3 {
 ul {
     list-style: none;
     margin:0px;
-    color: #0A3641;
+    
       
 }
 
@@ -234,7 +244,7 @@ p{
 /*POPULAR STYLES INDEX*/
 .popular-styles-h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     color: #DF6800;
     text-transform: uppercase;
 
@@ -249,6 +259,7 @@ p{
 .jacket-info-container{
     display: flex;
     justify-content: center;
+    
     /* margin-bottom: 1rem; */
 }
 .jacket-short-info{
@@ -256,6 +267,9 @@ p{
     border: solid  #707070 .5px;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    min-width: 140px;
+    margin-bottom: 2rem;
 }
 .jacket-short-info:not(:last-child) {
     margin-right: 5rem;
@@ -301,8 +315,8 @@ p{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: #3F626A ;
-    color: #0A3641;
+    background-color:var(--light-color) ;
+    color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -324,6 +338,9 @@ footer{
     margin: 3rem 3rem 0 0;
     
 }
+/* .social-icon, .socials-footer a:visited{
+    color: var(--light-color);
+} */
 
 .second-footer-list {
     display: flex;
@@ -369,24 +386,17 @@ footer{
     }
     
     
-    .center-content {
-        display: none;
-    }
+    
     .popular-styles {
        /*  flex-wrap: wrap; */
     }
-    .jacket { /*TODO jackets need more info and to be centered*/
-        margin-bottom: 1rem;
     
-    }
-    .jacket-4 {
-        margin-right: 5rem;
+    
 
-
-    }
-    .jacket-info-container{
+    
+    /* .jacket-info-container{
         display: none;
-    }
+    } */
     footer {
         align-items: flex-start;
     }
@@ -444,6 +454,15 @@ footer{
         border:#E8EDEE solid 2px;
 
     }
+    .popular-styles-container{
+        
+
+    }
+    .jacket-short-info:not(:last-child), .jacket:not(:last-child) {
+        margin-right: .5rem;
+
+    }
+    
 
 
 }
@@ -460,8 +479,16 @@ footer{
     .buy-gender{
         height: 8rem;
         width: 8rem;
+        margin-bottom: 2rem;
     }
     .button-new-arrivals{
 
     }
+    .all-weather-conditions, .jacket, .jacket-info-container{
+        display: none;
+    }
+    #index-about-text{
+        min-width: 20rem;
+    }
+
 }
