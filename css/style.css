@@ -21,6 +21,7 @@ Contrast-color:#DF6800
     margin:0;
     padding:0;
     border:0;
+    /* box-sizing: border-box; */ /*!makes the about-text narrow*/
 }
 
 @font-face {
@@ -37,6 +38,7 @@ body {
     box-sizing: border-box;
     max-width: 1770px;
     margin: auto;
+    min-height: 100vh;
 }
 main{
     background-color: #E8EDEE;
@@ -89,8 +91,50 @@ img {
 }
 
 /* NAVIGATION */
+
+.visiting {
+    font-weight: 500;
+}
 /*HAMBURGER-MENU*/
-.hamburger-container {
+
+/* .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5 ease-in-out;
+    
+}
+
+.menu-btn-burger {
+    width: 50px;
+    height: 6px;
+    background: var(--dark-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn::before,
+.menu-btn::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn::before{
+    transform: translateY(-16px);
+}
+.menu-btn::after{
+    transform: translateY(16px);
+} */
+/* .hamburger-container {
     position: absolute;
     left: 2rem;
     top: 1.5rem;
@@ -106,7 +150,7 @@ img {
 #hamburger-menu, .hamburger-layer {
     display: none;
 }
-
+ */
 nav {
     background-color: #E8EDEE;   
     
@@ -126,6 +170,9 @@ nav {
     margin:1rem 3rem 0 0;
     
 }
+.nav-element a:hover{
+    color: var(--contrast-color);
+}
 
 /* text */
 a {
@@ -142,7 +189,7 @@ ul {
       
 }
 
-a:link, :visited {
+a:link, a:visited {
     text-decoration: none;
     color: #0A3641;
 }
@@ -318,6 +365,7 @@ footer{
     background-color:var(--light-color) ;
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top: 1px solid var(--dark-color);
 }
 
 .first-footer-list{
@@ -358,26 +406,63 @@ footer{
 
 @media(max-width: 1200px) {
     
-  /*   .nav-logo {
-           
-    } */
+  
+       
+    
+    .nav-with-icons{
+        display: none;
+    }
+
     #logo {
         width: 10rem; /* Had to make an id to override the size */
-        justify-self: center; 
+
+    } 
+
+    .nav-home{
+        grid-area: menu1;
     }
-    .hamburger-layer{
-        display: block;
+    .nav-about{
+        grid-area: menu2;
     }
-    #hamburger-menu:checked ~ nav{
-        display: block;
+    .nav-contact{
+        grid-area: menu3;
+    }
+    .nav-logo{
+        grid-area: logo;
     }
     
     .header-elements {
-        justify-content: center;
+        width: 100%;
+        display: grid;
+        justify-content: stretch;
+        grid-template-columns:  10px 150px  auto  160px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        " . menu1 . logo"
+        " . menu2 . logo"
+        " . menu3 . . ";
+        
     }
+   
     .nav-element {
+       
+       padding:20px;
+       display: none;
+    }
+    .menu-btn{
         display: none;
     }
+    #menu-btn:checked ~ .nav-element{
+        display: block;
+
+    }
+    .menu-icon {
+        color: var(--dark-color);
+        margin: 5px;
+        padding: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        }
     
     .buy-gender{
         height: 15rem;
@@ -385,24 +470,19 @@ footer{
         background-size: cover;
     }
     
-    
-    
+     
     .popular-styles {
        /*  flex-wrap: wrap; */
     }
     
-    
-
-    
-    /* .jacket-info-container{
-        display: none;
-    } */
     footer {
         align-items: flex-start;
     }
 
     .socials-footer {
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        margin-left: 2rem;
     }    
 }
 @media(max-width: 780px){
