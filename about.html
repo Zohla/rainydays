@@ -2,26 +2,37 @@
 <html>
   <head>
     <title>Rainydays</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
   </head>
+  
   <body>
-    <nav>
-      <a href="index.html">
-        <img src="/images/RainyDays_Logo.png" alt="Rainydays Logo">
-      </a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="visiting"><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Search</a></li>
-        <li><a href="#">Shopping Bag</a></li>
-        <li><a href="#">Log In</a></li>
-      </ul>
-    </nav>
+    <header>  
+      <a href="index.html" class="logo-align">
+        <img id="logo" class="nav-logo" src="/images/RainyDays_Logo.png" alt="Rainydays Logo with the tagline pushing the comfort Zone">
+      </a>   
+      <nav class="nav-1">
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul class="nav-elements">
+          <li class="nav-element nav-home visiting"><a href="index.html">Home</a></li>
+          <li class="nav-element nav-about"><a href="about.html">About</a></li>
+          <li class="nav-element nav-contact" ><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-2">    
+        <ul class="nav-interaction-elements">
+          <li class="nav-element nav-with-icons"><a href="#"><i class="fas fa-search"></i> Search</a></li>
+          <li class="nav-element nav-with-icons"><a href="#"><i class="far fa-user"></i> Log In</a></li>
+          <li class="nav-element nav-with-icons"><a href="checkout.html"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
+        </ul>
+      </nav>
+        
+    </header>
+    
       <main>
-          <p>About</p>
-          <img class="about-picture" src="/images/wojciech-then-DijA5f0voGQ-unsplash.jpg" alt="a man looking out over the mountains his hiking in">
+          <h1>About</h1>
           <p>Founded in 2020 Rainydays strive to make the best gear for your adventures. 
             We're  testing the performance of our jackets with the help of avid explorers, and we're 
             constantly evolving to find the best styles and technologies to make your journey 
@@ -29,28 +40,11 @@
             is the days that serve weather that can ruin a good trip. Equipped with Rainydays we bring
             you gear that keeps you warm and dry, no matter the weather conditions. 
             </p>
+          <img class="about-picture" src="/images/wojciech-then-DijA5f0voGQ-unsplash.jpg" alt="a man looking out over the mountains his hiking in">
+          
       </main>
+      
   
   </body>
-  <footer>
-    <ul>
-      <li>Customer Service</li>
-      <li>Frequently asked questions</li>
-      <li>Return Policy</li>
-      <li>Newsletter</li>
-      <li>Contact</li>
-    </ul>
-    <ul>
-      <li>LinkedIn</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Facebook</li>
-    </ul>
-    <ul> 
-      <li>Shop</li>
-      <li>Women</li>
-      <li>Men</li>
-    </ul>
-
-  </footer>
+  
 </html>
