@@ -107,9 +107,11 @@ img {
     font-size: 1.25rem;
     align-self: center;
     padding-top: .7rem;
-    height: 2.5rem;
-    
-        
+    height: 2.5rem;    
+}
+.button-3-clear:hover{
+    color: var(--contrast-color);
+    border-color:var(--contrast-color);
 }
 
 .button-new-arrivals {
@@ -127,6 +129,10 @@ img {
 .social-icon{
     font-size: 2rem;
 }
+.social-icon:hover, .menu-icon:hover{
+    color: var(--contrast-color);
+}
+
 
 /* NAVIGATION */
 nav{
@@ -389,12 +395,9 @@ footer{
 
 @media(max-width: 1200px) {
 
-    /* header{
-        justify-content: space-between;
-    } */
-    
-  
-       
+    .hero {
+        min-height: 30rem;
+    }
     
     .nav-with-icons{
         display: none;
@@ -515,10 +518,7 @@ footer{
     .all-weather-conditions{
         display: none;
     }
-    .popular-styles-container{
-        
-
-    }
+    
     .jacket-short-info:not(:last-child), .jacket:not(:last-child) {
         margin-right: .5rem;
 
@@ -544,12 +544,19 @@ footer{
         width: 8rem;
         margin-bottom: 2rem;
     }
-    .button-new-arrivals{
-
-    }
-    .all-weather-conditions, .jacket, .jacket-info-container{
+    
+    .all-weather-conditions, /* .jacket, */ .jacket-info-container{
         display: none;
     }
+    .popular-styles-container{
+        flex-wrap: wrap;
+
+    }
+    .jacket {
+        margin: 1rem;
+        
+    }
+
     #index-about-text{
         min-width: 20rem;
     }
