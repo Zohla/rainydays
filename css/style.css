@@ -30,6 +30,16 @@ Contrast-color:#DF6800
     font-family: Georgia, 'Times New Roman', Times, serif;
     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');/* *!fix */
 }
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+
+}
+h2{
+    font-weight: 300;
+    padding: 1rem;
+}
 header {
     background-color:#E8EDEE;
     display: flex;  
@@ -455,7 +465,7 @@ footer{
 @media(max-width: 780px){
     .hero{
         background-size: 100vw;
-        min-height: 30rem;
+        min-height: 25rem;
         display: grid;
         grid-template-columns:[first-c] 10% [second-c]25% [third-c] 20% [forth-c]25% [last-r] 10%;
         grid-template-rows:[first-r] 25%[second-r] 25% [third-r]25%[forth-r] 25%;
@@ -495,11 +505,15 @@ footer{
         
         
     }
-    .new-arrivals-mobile button{
+    .button-new-arrivals-mobile {
         width: 15rem;
         color: #DF6800;
         border:#E8EDEE solid 2px;
+        margin: 1rem;
 
+    }
+    .all-weather-conditions{
+        display: none;
     }
     .popular-styles-container{
         
@@ -513,15 +527,17 @@ footer{
 
 
 }
-@media only screen and (max-width:600px) { /*TODO Move stuff from other mediaquery to this one. I can keep more in screen sizes between 600 and 1200px*/
+@media only screen and (max-width:600px) { 
     
     .hero{
+        min-height: 20rem;
+        
         grid-template-areas: 
         ". . . . ."
-        
+        "woman women . men men"
         ". . . . ."
         ". . . . ."
-        "woman women . men men";
+        ;
     }
     .buy-gender{
         height: 8rem;
