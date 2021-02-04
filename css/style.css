@@ -152,6 +152,16 @@ img {
     color: #DF6800;
 }
 
+/* JACKET-SPECIFIC */
+
+.jacket-size{
+    border: 1px solid var(--dark-color);
+    border-radius: 5%;
+    width: 2rem;
+    padding: .4rem;
+    margin: 1rem;
+}
+
 /* icons */
 .social-icon{
     font-size: 2rem;
