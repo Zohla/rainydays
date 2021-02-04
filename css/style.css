@@ -24,7 +24,7 @@ Contrast-color:#DF6800
     border:0;
     /* box-sizing: border-box; */ /*!makes the about-text narrow*/
 }
-
+/* Typography */
 @font-face {
    
     font-family: 'Roboto', sans-serif;
@@ -35,7 +35,11 @@ h1{
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
-
+    color: var(--contrast-color);
+}
+.h1-sub-pages{
+    text-align: center;
+    font-weight: 300;
 }
 h2{
     font-weight: 300;
@@ -77,7 +81,8 @@ body {
     box-sizing: border-box;
     max-width: 1770px;
     margin: auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100%;
 }
 main{
     background-color: #E8EDEE;
@@ -290,13 +295,7 @@ p{
     text-transform: uppercase;
 
 }
-/* .popular-styles-container {
-    display: flex;
-    justify-content: center;
-} */
-.jacket:not(:last-child){
-    /* margin-right: 5rem; */
-}
+
 .jacket-info-container{
     display: flex;
     justify-content: center;
@@ -410,6 +409,31 @@ footer ul a:visited{
 .about-picture{
     max-height: 75rem;
 }
+/* LIST-OF-JACKETS */
+
+.list-of-jackets{
+    flex-wrap: wrap;
+    flex: 1;
+
+}
+.sub-page-footer{
+    /* flex-shrink: 0; */
+    margin-top: auto;
+}
+.free-shipping{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .8rem;
+}
+.vh-fix{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--light-color);
+}
 
 @media(max-width: 1200px) {
 
@@ -468,10 +492,6 @@ footer ul a:visited{
         background-size: cover;
     }
     
-     
-    .popular-styles {
-       /*  flex-wrap: wrap; */
-    }
     
     footer {
         align-items: flex-start;
@@ -563,7 +583,7 @@ footer ul a:visited{
         margin-bottom: 2rem;
     }
     
-    .all-weather-conditions, /* .jacket, */ /* */{
+    .all-weather-conditions {
         display: none;
     }
     .jacket-info-container {
@@ -572,7 +592,7 @@ footer ul a:visited{
     
     .jacket {
         min-width: 132px;
-        
+       
     }
    
     #index-about-text{
