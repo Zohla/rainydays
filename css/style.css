@@ -40,6 +40,8 @@ h1{
 .h1-sub-pages{
     text-align: center;
     font-weight: 300;
+    background-color: #fff;
+    margin-bottom: 1rem;
 }
 h2{
     font-weight: 300;
@@ -152,15 +154,6 @@ img {
     color: #DF6800;
 }
 
-/* JACKET-SPECIFIC */
-
-.jacket-size{
-    border: 1px solid var(--dark-color);
-    border-radius: 5%;
-    width: 2rem;
-    padding: .4rem;
-    margin: 1rem;
-}
 
 /* icons */
 .social-icon{
@@ -444,7 +437,6 @@ footer ul a:visited{
 
 }
 .sub-page-footer{
-    /* flex-shrink: 0; */
     margin-top: auto;
 }
 .free-shipping{
@@ -460,6 +452,36 @@ footer ul a:visited{
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--light-color);
+}
+
+
+/* JACKET-SPECIFIC */
+
+.nav-tree{
+    margin: .5rem 1rem;
+}
+.container-jacket-specific{
+    display: flex;
+    justify-content: space-around;
+}
+.jacket-size{
+    border: 1px solid var(--dark-color);
+    border-radius: 5%;
+    width: 2rem;
+    padding: .4rem;
+    margin: 1rem;
+}
+
+.jacket-specific-img{
+    align-self: center;
+    margin-bottom: 2rem;
+    
+}
+.jacket-long-info{
+    max-width: 25rem;
+}
+.options-buy{
+    display: flex;
 }
 
 
