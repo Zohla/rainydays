@@ -30,12 +30,51 @@
       </nav>
         
     </header>
-      <main>
-          <h1>Checkout</h1>
-          <h3>Items</h3>
-          <p>Your shopping bag is currently empty</p>
-          <p>Shipping</p>
-          <p>Total</p>
+      <main class="vh-fix checkout-container">
+          <h1 class="h1-sub-pages">Checkout</h1>
+          <h2>Your shopping bag</h2>
+          <div class="cart-content">
+            <div class="cart-detail-headers">
+              <p>Item</p>
+              <p>price</p>
+              <p>qty</p>
+            </div>
+            <div class="cart-content-all">
+              <div class="cart-content-details">
+                <div class="checkout-item-info"></div>
+                <img class="item-checkout-pic" src="images/10925270096.jpg" alt="Freja technical jacket">
+                <div>
+                  <h3>Freja</h3>
+                <p><span class="color">color:</span> Deep teal</p>
+                <p><span>Size</span>40</p>
+                </div>
+                
+              </div>
+              <div class="checkout-item-price">
+                <p>NOK 1599</p>
+              </div>
+              <div>
+                <p>1</p>
+              </div>            
+            </div>
+            <div  class="cart-summary">
+              <div class="summary-price">
+                <p>Items</p>
+                <p>1599</p>
+              </div>
+              <div class="summary-price">
+                <p>Shipping</p>
+                <p>69</p>
+              </div>
+              <div class="summary-price">
+                
+                <p>Total</p>
+                
+                <p>1668</p>
+              </div>
+            </div>
+          </div>
+          
           <form action="">
             <input type="radio" id="Visa" name="payment" value="visa">
             <label for="visa">Visa</label><br>
@@ -45,33 +84,33 @@
             <input type="text" id="name" name="name"><br>
             <label for="adress">Adress</label><br>
             <input type="text" id="adress" name="adress">
-
           </form>
           
-          <button>Order</button>
+          
 
       </main>
+      <footer class="sub-page-footer">
+        <ul class="first-footer-list">
+          <li><a href="#">Customer Service</a> </li>
+          <li><a href="#">Frequently asked questions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="socials-footer">
+          <li><a href="linkedin.com" target="_blank"><i class=" social-icon fab fa-linkedin-in"></i></a></li>
+          <li><a href="instagram.com" target="_blank"><i class="social-icon fab fa-instagram"></i></a></li>
+          <li><a href="twitter.com" target="_blank"><i class="social-icon fab fa-twitter"></i></a></li>
+          <li><a href="facebook.com" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a></li>
+        </ul>
+        <ul class="second-footer-list"> 
+          <li><a href="list-of-jackets.html"> Shop</a></li>
+          <li><a href="list-of-jackets.html">Women</a></li>
+          <li><a href="list-of-jackets.html">Men</a></li>
+        </ul>
+        
+      </footer>
   
   </body>
-  <footer>
-    <ul>
-      <li>Customer Service</li>
-      <li>Frequently asked questions</li>
-      <li>Return Policy</li>
-      <li>Newsletter</li>
-      <li>Contact</li>
-    </ul>
-    <ul>
-      <li>LinkedIn</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Facebook</li>
-    </ul>
-    <ul> 
-      <li>Shop</li>
-      <li>Women</li>
-      <li>Men</li>
-    </ul>
-
-  </footer>
+  
 </html>
