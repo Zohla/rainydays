@@ -90,6 +90,9 @@ nav{
 #logo{
     max-height: 200px;
 }
+.show-in-hamburger{
+    display: none;
+}
 .nav-1{
     order: 1;
     padding-left: 1rem;
@@ -866,6 +869,12 @@ footer ul a:visited{
         ". . . . ."
         ;
     }
+    .show-in-hamburger{
+        display: block;
+    }
+    .nav-2{
+        display: none;
+    }
     .buy-gender{
         height: 8rem;
         width: 8rem;
@@ -899,8 +908,6 @@ footer ul a:visited{
     }
     .cart-content-all{
         max-width: 90%;
-        margin: 0;
-
     }
     .about-page-txt{
         margin: 2rem;
