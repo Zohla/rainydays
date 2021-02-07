@@ -838,9 +838,7 @@ footer ul a:visited{
     
     .jacket-short-info:not(:last-child), .jacket:not(:last-child) {
         margin-right: .5rem;
-
     }
-   
     .jacket-info-container div{
         margin-right: 2rem;
     }
@@ -865,9 +863,6 @@ footer ul a:visited{
     ". . . . . ."
     ". summary summary summary  . .";
     }
-    
-
-
 }
 @media only screen and (max-width:600px) { 
     
@@ -902,21 +897,14 @@ footer ul a:visited{
     }
     .jacket-short-info{
         margin-right: 1rem;
-
     }
-        
-    
-    
     .jacket {
         min-width: 132px;
        
     }
-    
-   
     #index-about-text{
         min-width: 20rem;
         margin: 0;
-        
     }
     .item-checkout-pic{
         max-height: 100px;
@@ -926,7 +914,6 @@ footer ul a:visited{
     }
     .cart-content-details{
         width: 90%;
-        
     }
     .cart-content-all{
         max-width: 90%;
@@ -940,7 +927,4 @@ footer ul a:visited{
     .cart-content-all{
         margin-right: 0;
     }
-    
-   
-
 }
