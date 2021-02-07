@@ -937,6 +937,10 @@ footer ul a:visited{
     .checkout-msg{
         margin: 1rem;
     }
+    .cart-content-all{
+        margin-right: 0;
+    }
+    
    
 
 }
