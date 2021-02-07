@@ -899,6 +899,7 @@ footer ul a:visited{
     }
     .cart-content-all{
         max-width: 90%;
+        margin: 0;
 
     }
     .about-page-txt{
