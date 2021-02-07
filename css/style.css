@@ -176,8 +176,8 @@ main{
 }
 
 
-.button-new-arrivals {
-    color: #DF6800;
+.button-new-arrivals, .button-new-arrivals:visited {
+    color: var(--contrast-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 3rem;
     width: 15rem;
@@ -204,7 +204,7 @@ main{
     color: var(--light-color);
     background-color: var(--dark-color);
 }
-.weather-condition:visited{
+.weather-condition:visited, .weather-condition{
     color: var(--light-color);
 }
 
@@ -215,12 +215,6 @@ main{
 .social-icon:hover, .menu-icon:hover{
     color: var(--contrast-color);
 }
-
-
-/* NAVIGATION */
-
-
-
 
 
 /* HOME */
@@ -436,7 +430,25 @@ footer ul a:visited{
 
 /* ABOUT-PAGE */
 .about-picture{
-    max-height: 75rem;
+    max-height: 30rem;
+}
+.about-page-content{
+    display: flex;
+    background-image: url(/images/wojciech-then-DijA5f0voGQ-unsplash2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 30rem;
+}
+.about-page-txt{
+    max-width: 30rem;
+    color: var(--light-color);
+    margin: 8rem 2rem;
+    padding: 2rem;
+    background-color: rgba(10, 54, 65, .5);   
+}
+.learn-more-about{
+    padding: 2rem;
 }
 /* LIST-OF-JACKETS */
 
@@ -541,6 +553,9 @@ footer ul a:visited{
 }
 
 /* CHECKOUT */
+.checkout-container{
+    display: flex;
+}
 .cart-detail-headers{
     display: flex;
     justify-content: space-around;
@@ -687,8 +702,11 @@ footer ul a:visited{
         min-height: 30rem;
     }
     
-    .nav-with-icons{
+    .nav-interaction-elements li a p{
         display: none;
+    }
+    .nav-interaction-elements li a i{
+        font-size: 1.5rem;
     }
 
     #logo {
@@ -703,7 +721,7 @@ footer ul a:visited{
         display: flex;
     }
     .nav-2{
-        display: none;
+        order: 2;
     }
     .menu-icon{ /* Show hamburger menu icon */
         display: block;
@@ -750,6 +768,9 @@ footer ul a:visited{
     }    
 }
 @media(max-width: 780px){
+    #logo{
+        width: 7rem;
+    }
     .hero{
         background-size: 100vw;
         min-height: 25rem;
@@ -763,6 +784,12 @@ footer ul a:visited{
         ". . . . ."
         
         ;
+    }
+    /* .nav-1{
+        z-index: 5;
+    } */
+    .nav-with-icons{
+        margin: 1rem 0;
     }
     .buy-gender{
         height: 10rem;
@@ -873,6 +900,12 @@ footer ul a:visited{
     .cart-content-all{
         max-width: 90%;
 
+    }
+    .about-page-txt{
+        margin: 2rem;
+    }
+    .checkout-msg{
+        margin: 1rem;
     }
 
 }
