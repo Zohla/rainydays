@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays</title>
+    <title>Rainydays|Checkout</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
   </head>
   <body>
-    <nav>
-      
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <a href="index.html">
-            <img src="/images/RainyDays_Logo.png" alt="Rainydays Logo">
-          </a>
-          <ul>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Shopping Bag</a></li>
-            <li><a href="#">Log In</a></li>
-          </ul>
-    </nav>
-      <main>
-          <h1>Checkout</h1>
+    <header>  
+      <a href="index.html" class="logo-align">
+        <img id="logo" class="nav-logo" src="/images/RainyDays_Logo.png" alt="Rainydays Logo with the tagline pushing the comfort Zone">
+      </a>   
+      <nav class="nav-1">
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul class="nav-elements">
+          <li class="nav-element nav-home "><a href="index.html">Home</a></li>
+          <li class="nav-element nav-about"><a href="about.html">About</a></li>
+          <li class="nav-element nav-contact" ><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-2">    
+        <ul class="nav-interaction-elements">
+          <li class="nav-element nav-with-icons"><a href="#"><i class="fas fa-search"></i> Search</a></li>
+          <li class="nav-element nav-with-icons"><a href="#"><i class="far fa-user"></i> Log In</a></li>
+          <li class="nav-element visiting nav-with-icons"><a href="checkout.html"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
+        </ul>
+      </nav>
+        
+    </header>
+      <main class="checkout-success vh-fix">
+        <h1 class="h1-sub-pages">Checkout</h1>
+        <div class="checkout-msg">
           <h2>Thank you for your purchase!</h2>
-          <p>Your tracking number is: 4578421 and can be 
-            tracked at www.dhl.com/tracking
-            
-            An email with your order confirmation will be 
-            delivered shortly.
-           </p>
-           <button>Close</button>
-           <h2>Welcome back!</h2>
+          <p>Your tracking number is: <span class="p-bold">4578421</span>  and can be 
+              tracked at <a href="www.dhl.com/tracking" target="_blank" class="tracking-link">www.dhl.com/tracking</a> 
+          </p>
+          <p>An email with your order confirmation will be 
+              delivered shortly.
+          </p>
+          <h3 class="wlc-bck-msg">Welcome back!</h3>
+        </div>
       </main>
+      <footer class="sub-page-footer">
+        <ul class="first-footer-list">
+          <li><a href="#">Customer Service</a> </li>
+          <li><a href="#">Frequently asked questions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="socials-footer">
+          <li><a href="linkedin.com" target="_blank"><i class=" social-icon fab fa-linkedin-in"></i></a></li>
+          <li><a href="instagram.com" target="_blank"><i class="social-icon fab fa-instagram"></i></a></li>
+          <li><a href="twitter.com" target="_blank"><i class="social-icon fab fa-twitter"></i></a></li>
+          <li><a href="facebook.com" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a></li>
+        </ul>
+        <ul class="second-footer-list"> 
+          <li><a href="list-of-jackets.html"> Shop</a></li>
+          <li><a href="list-of-jackets.html">Women</a></li>
+          <li><a href="list-of-jackets.html">Men</a></li>
+        </ul>
+        
+      </footer>
   
   </body>
-  <footer>
-    <ul>
-      <li>Customer Service</li>
-      <li>Frequently asked questions</li>
-      <li>Return Policy</li>
-      <li>Newsletter</li>
-      <li>Contact</li>
-    </ul>
-    <ul>
-      <li>LinkedIn</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Facebook</li>
-    </ul>
-    <ul> 
-      <li>Shop</li>
-      <li>Women</li>
-      <li>Men</li>
-    </ul>
-
-  </footer>
+ 
 </html>
