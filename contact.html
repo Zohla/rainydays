@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays</title>
+    <title>Rainydays|Contact</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
   </head>
   <body>
-    <nav>
-      <a href="index.html">
-        <img src="/images/RainyDays_Logo.png" alt="Rainydays Logo">
-      </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="visiting"><a href="contact.html">Contact</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Shopping Bag</a></li>
-            <li><a href="#">Log In</a></li>
-          </ul>
-    </nav>
+    <header>  
+      <a href="index.html" class="logo-align">
+        <img id="logo" class="nav-logo" src="/images/RainyDays_Logo.png" alt="Rainydays Logo with the tagline pushing the comfort Zone">
+      </a>   
+      <nav class="nav-1">
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul class="nav-elements">
+          <li class="nav-element nav-home "><a href="index.html">Home</a></li>
+          <li class="nav-element nav-about"><a href="about.html">About</a></li>
+          <li class="nav-element nav-contact" ><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-2">    
+        <ul class="nav-interaction-elements">
+          <li class="nav-element nav-with-icons"><a href="#"><i class="fas fa-search"></i> Search</a></li>
+          <li class="nav-element nav-with-icons"><a href="#"><i class="far fa-user"></i> Log In</a></li>
+          <li class="nav-element visiting nav-with-icons"><a href="checkout.html"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
+        </ul>
+      </nav>
+        
+    </header>
       <main>
-          <h1>Contact</h1>
-          <p>Hi!
- 
-            We love that you want to get in touch with us!
-            you can call us during hours, send us and e-mail or
-            let us know what your up to on social media.
-            however, the easiest way is to just use this form, and
-            we will get back to you as soon as we can!<br>
+          <h1 class="h1-sub-pages">Contact</h1>
+          <div class="contact-content">
+            <div class="contact-text">
+              <p>Hi!</p>
+              <p>We love that you want to get in touch with us!
+                you can call us during hours, send us and e-mail or
+                let us know what your up to on social media.
+                however, the easiest way is to just use this form, and
+                we will get back to you as soon as we can!</p>
+                <div class="contact-alts">
+                  <p><span>Phone:</span> 123 45 378 (8am-4pm)</p>
+                  <p><span>Email:</span> support@rainydays.com</p>
+                  <p><span>Facebook:</span> Facebook.com/rainydays</p>
+                  <p><span>Twitter:</span> twitter.com/rainydays</p>
+                  <p><span>Instagram:</span> instagram.com/rainydays</p>
+                  <p><span>LinkdIn:</span> linkedin.com/rainydays</p>
+                </div>
+                <p>We are looking forward to hear from you!</p>
+            </div>
             
-            phone: 000 00 000 (8am-4pm)
-            email: support@rainydays.com
-            facebook: Facebook.com/rainydays
-            twitter: twitter.com/rainydays
-            instagram: instagram.com/rainydays
-            linkedin: linkedin.com/rainydays
-            
-            
-            looking forward to hear from you!</p>
+            <form class="contact-form">
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <label for="subject">Subject</label><br>
+              <input type="text" id="subject" name="subject"><br>
+              <label for="message">Message</label><br>
+              <input type="text" id="message" name="message"> <br>                
+            </form>
+            <p class="send-form-btn">Send</p>
+
+          </div>
+          
       </main>
-      <form action="">
-          <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email"><br>
-          <label for="subject">Subject</label><br>
-          <input type="text" id="subject" name="subject"><br>
-          <label for="message">Message</label><br>
-          <input type="text" id="message" name="message"> <br>
-          <input type="submit" value="Send">
-      </form>
+      
+      <footer class="sub-page-footer">
+        <ul class="first-footer-list">
+          <li><a href="#">Customer Service</a> </li>
+          <li><a href="#">Frequently asked questions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="socials-footer">
+          <li><a href="linkedin.com" target="_blank"><i class=" social-icon fab fa-linkedin-in"></i></a></li>
+          <li><a href="instagram.com" target="_blank"><i class="social-icon fab fa-instagram"></i></a></li>
+          <li><a href="twitter.com" target="_blank"><i class="social-icon fab fa-twitter"></i></a></li>
+          <li><a href="facebook.com" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a></li>
+        </ul>
+        <ul class="second-footer-list"> 
+          <li><a href="list-of-jackets.html"> Shop</a></li>
+          <li><a href="list-of-jackets.html">Women</a></li>
+          <li><a href="list-of-jackets.html">Men</a></li>
+        </ul>
+        
+      </footer>
   
   </body>
-  <footer>
-    <ul>
-      <li>Customer Service</li>
-      <li>Frequently asked questions</li>
-      <li>Return Policy</li>
-      <li>Newsletter</li>
-      <li>Contact</li>
-    </ul>
-    <ul>
-      <li>LinkedIn</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Facebook</li>
-    </ul>
-    <ul> 
-      <li>Shop</li>
-      <li>Women</li>
-      <li>Men</li>
-    </ul>
-
-  </footer>
 </html>
