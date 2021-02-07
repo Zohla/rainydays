@@ -10,7 +10,6 @@ COLOURS
 main background-color: #E8EDEE
 dark text-color: #0A3641
 Contrast-color:#DF6800
-
 */
 :root{
     --light-color: #E8EDEE;
@@ -22,14 +21,13 @@ Contrast-color:#DF6800
     margin:0;
     padding:0;
     border:0;
-    /* box-sizing: border-box; */ /*!makes the about-text narrow*/
+
 }
 /* Typography */
 @font-face {
-   
     font-family: 'Roboto', sans-serif;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');/* *!fix */
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 }
 h1{
     font-size: 2rem;
@@ -48,7 +46,6 @@ h2{
     padding: 1rem;
 }
 h3 {
-    /* font-size: 2rem; */
     font-weight: 300;
     color: var(--dark-color);
 }
@@ -138,7 +135,6 @@ body {
     box-sizing: border-box;
     max-width: 1770px;
     margin: auto;
-    /* min-height: 100vh; */
     height: 100%;
 }
 main{
@@ -200,7 +196,6 @@ main{
     color: var(--dark-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    /* box-shadow: .01rem .01rem .2rem #0A3641; */
     background-color: var(--light-color);
     cursor: pointer;
 }
@@ -240,8 +235,6 @@ main{
 .button-3-clear .button3{
     margin-left: auto;
     margin-right: auto;
-    
-
 }
 .new-arrivals-containter{
     display: flex;
@@ -285,16 +278,11 @@ main{
     background-size: cover;
     display: flex;
     justify-content: center;
-    
 }
 .weather-condition{
     align-self: center;
     width: 7rem;
     padding-top: .5rem;
-    
-    
-    
-   
 }
 .rain {
     margin-left: 5rem;
@@ -407,20 +395,16 @@ footer ul a:visited{
 .first-footer-list{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .first-footer-list li{
-    margin: .5rem;
-    
+    margin: .5rem;    
 }
 .socials-footer{
-    display: flex;
-   
+    display: flex;  
 }
 .socials-footer li{
-    margin: 3rem 3rem 0 0;
-    
+    margin: 3rem 3rem 0 0;    
 }
 
 .second-footer-list {
@@ -493,7 +477,6 @@ footer ul a:visited{
 
 .jacket-specific-img{
     align-self: center;
-   /*  margin-bottom: 2rem; */
    height: 500px;
     
 }
@@ -563,7 +546,6 @@ footer ul a:visited{
 .cart-detail-headers{
     display: flex;
     justify-content: space-around;
-    /* width: 70%; */
     border-bottom: 1px solid var(--dark-color);
     padding: .5rem;
     height: 1rem;
@@ -575,8 +557,6 @@ footer ul a:visited{
 .cart-content-all{
     display: flex;
     margin: 1rem;
-    /* justify-content: space-between; */
-    /* max-width: 60%; */
     grid-area: item;
 }
 .checkout-item-price{
@@ -593,7 +573,6 @@ footer ul a:visited{
     display: flex;
     background-color: #fff;
     padding: 1rem;
-    /* grid-area: item; */
 }
 .item-checkout-pic{
     max-height: 150px;
@@ -605,7 +584,6 @@ footer ul a:visited{
     
     background-color: #fff;   
     grid-area: summary;
-    /* justify-self: center;0 */
 }
 .summary-head{
     text-align: center;
@@ -743,7 +721,6 @@ footer ul a:visited{
         display: block;
 
     }
-   
     .menu-icon {
         color: var(--dark-color);
         margin: 5px;
@@ -760,10 +737,7 @@ footer ul a:visited{
     }
     .jacket-short-info:not(:last-child){
         margin-right: 2.5rem;
-
     }
-    
-    
     footer {
         align-items: flex-start;
     }
@@ -788,20 +762,14 @@ footer ul a:visited{
         ". . . . ."
         ". women . men ."
         ". . . . ."
-        
         ;
     }
-    /* .nav-1{
-        z-index: 5;
-    } */
     .nav-with-icons{
         margin: 1rem 0;
     }
     .buy-gender{
         height: 10rem;
         width: 10rem;
-      
-        
     }
     .women-pic{
         grid-area: women;
@@ -821,9 +789,6 @@ footer ul a:visited{
         align-items:center;
         font-family: Roboto;
         padding-bottom:1.34rem;
-        
-        
-        
     }
     .button-new-arrivals-mobile {
         width: 15rem;
