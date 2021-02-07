@@ -83,6 +83,10 @@ header {
     justify-content: space-between;
 }
 /* NAVIGATION */
+nav{
+    display: flex;
+    
+}
 #logo{
     max-height: 200px;
 }
@@ -109,6 +113,22 @@ header {
 
 .nav-interaction-elements{   
     display: flex;
+}
+
+.menu-btn, .menu-icon{
+    display: none;
+}
+.visiting {
+    font-weight: 500;
+}
+
+.nav-element {
+    text-transform: uppercase;
+    margin:1rem 3rem 0 0;
+    
+}
+.nav-element a:hover{
+    color: var(--contrast-color);
 }
 
 body {
@@ -167,7 +187,7 @@ main{
     padding-top: 1.3rem;
 
 }
-.buy-now-link, .add-to-cart{
+.buy-now-link, .add-to-cart, .checkout-btn, .send-form-btn{
     text-align: center;
     border: 1px solid var(--dark-color);
     align-self: center;
@@ -178,8 +198,9 @@ main{
     font-weight: 500;
     /* box-shadow: .01rem .01rem .2rem #0A3641; */
     background-color: var(--light-color);
+    cursor: pointer;
 }
-.buy-now-link:hover, .add-to-cart:hover{
+.buy-now-link:hover, .add-to-cart:hover, .checkout-btn:hover, .send-form-btn:hover{
     color: var(--light-color);
     background-color: var(--dark-color);
 }
@@ -197,25 +218,7 @@ main{
 
 
 /* NAVIGATION */
-nav{
-    display: flex;
-    
-}
-.menu-btn, .menu-icon{
-    display: none;
-}
-.visiting {
-    font-weight: 500;
-}
 
-.nav-element {
-    text-transform: uppercase;
-    margin:1rem 3rem 0 0;
-    
-}
-.nav-element a:hover{
-    color: var(--contrast-color);
-}
 
 
 
@@ -538,13 +541,6 @@ footer ul a:visited{
 }
 
 /* CHECKOUT */
-/* .checkout-container{
-    display: flex; }*/
-    
-
-
-
-
 .cart-detail-headers{
     display: flex;
     justify-content: space-around;
@@ -613,6 +609,77 @@ footer ul a:visited{
     margin: 1rem;
 }
 
+.payment-form, .payment-heading{
+    align-self: center;
+    margin: 1rem;
+}
+.payment-form input{
+    margin-bottom: 1rem;
+}
+#name, #adress, #po-box, #phone, #visa{
+    height: 2rem;
+    width: 15rem;
+}
+.radio-text{
+    color: var(--dark-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+.checkout-btn{
+    align-self: center;
+    width: 5rem;
+    
+}
+/* CHECKOUT-SUCCESS */
+.checkout-success{
+    display: flex;
+    flex-direction: column;
+}
+.checkout-msg{
+    margin: 5rem auto;
+    
+}
+.tracking-link:hover{
+    color: var(--contrast-color);
+
+}
+.wlc-bck-msg{
+    margin: 1rem;
+    
+}
+/* CONTACT */
+.contact-text{
+    width: 75%;
+    margin: auto;
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+}
+.contact-alts{
+    margin: 1rem;
+}
+.contact-alts p span{
+    font-weight: bold;
+}
+.contact-form{
+    padding-top: 2rem;
+    margin: auto;
+}
+.contact-form label{
+    color: var(--dark-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1rem;
+}
+.contact-form input{
+    height: 2rem;
+    width: 15rem;
+    color: var(--dark-color);
+}
+#message{
+    height: 20rem;
+}
 
 @media(max-width: 1200px) {
 
