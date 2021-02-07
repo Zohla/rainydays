@@ -168,7 +168,8 @@ main{
     font-size: 1.25rem;
     align-self: center;
     padding-top: .7rem;
-    height: 2.5rem;    
+    height: 2.5rem;  
+    color: var(--light-color);  
 }
 .button-3-clear:visited{
     color: var(--light-color);
@@ -758,6 +759,10 @@ footer ul a:visited{
         width: 15rem;
         background-size: cover;
     }
+    .jacket-short-info:not(:last-child){
+        margin-right: 2.5rem;
+
+    }
     
     
     footer {
@@ -837,6 +842,10 @@ footer ul a:visited{
         margin-right: .5rem;
 
     }
+   
+    .jacket-info-container div{
+        margin-right: 2rem;
+    }
     .container-jacket-specific{
         flex-direction: column;
     }
@@ -853,7 +862,11 @@ footer ul a:visited{
     ". . . . . ."
     ". summary summary summary  . .";
     }
-    
+    #index-about-text{
+        padding: 5rem 1rem 1rem 1rem;
+        transform: none;
+        position: static;
+    }
 
 
 }
@@ -886,15 +899,25 @@ footer ul a:visited{
     }
     .jacket-info-container {
         flex-wrap: wrap;
+        
     }
+    .jacket-short-info{
+        margin-right: 1rem;
+
+    }
+        
+    
     
     .jacket {
         min-width: 132px;
        
     }
+    
    
     #index-about-text{
         min-width: 20rem;
+        margin: 0;
+        
     }
     .item-checkout-pic{
         max-height: 100px;
@@ -915,5 +938,6 @@ footer ul a:visited{
     .checkout-msg{
         margin: 1rem;
     }
+   
 
 }
