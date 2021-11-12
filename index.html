@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Rainydays</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
     <!-- Hotjar Tracking Code for https://rainydaysclothes.netlify.app/ -->
@@ -25,37 +25,37 @@
       <nav class="nav-1">
         <input class="menu-btn" type="checkbox" id="menu-btn">
         <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
-        <ul class="nav-elements">
-          <li class="nav-element nav-home visiting"><a href="index.html">Home</a></li>
-          <li class="nav-element nav-about"><a href="about.html">About</a></li>
-          <li class="nav-element nav-contact" ><a href="contact.html">Contact</a></li>
-          <li class="nav-element show-in-hamburger"><a href="checkout.html"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user"></i> Log In</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search"></i> Search</a></li>
-
-
-
-        </ul>
+        <div>
+          <ul class="nav-elements">
+            <li class="nav-element nav-home visiting"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-element nav-about"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-element nav-contact" ><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search"></i> Search</a></li>
+            <li class="nav-element show-in-hamburger"><a href="checkout.html" class="nav-link"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
+            <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user"></i> Log In</a></li>
+          </ul>
+          <ul class="nav-2">
+            <li class="nav-element"><a href="checkout.html"><i class="fas fa-shopping-bag" aria-label="Shopping bag"></i> Shopping Bag</a></li>
+          </ul>
+        </div>
       </nav>
-      <nav class="nav-2">    
-        <ul class="nav-interaction-elements">
-          <li class="nav-element show-in-hamburger"><a href="checkout.html"><i class="fas fa-shopping-bag" aria-label="Shopping bag"></i> Shopping Bag</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user" aria-label="Log in"></i> Log In</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search" aria-label="Search"></i> Search</a></li>
-        </ul>
-      </nav>
+      
         
     </header>
       <main>
         <div class="hero" id="hero">
           <div class="women-pic buy-gender">
-            <a href="list-of-jackets.html" class="button-3-clear">Women</a>
+            <div>
+              <a href="list-of-jackets.html" class="button-3-clear">WOMEN</a>
+            </div>
           </div>
           <div class="new-arrivals-containter">
             <a href="list-of-jackets.html" class="button-3-clear button-new-arrivals">new arrivals</a>
           </div>
           <div class="men-pic buy-gender">
-            <a href="list-of-jackets.html" class="button-3-clear">Men</a>
+            <div>
+              <a href="list-of-jackets.html" class="button-3-clear">MEN</a>
+            </div>
           </div>
         </div>
         <div class="new-arrivals-mobile">
@@ -68,16 +68,24 @@
         <div>
           <section class="all-weather-conditions">
             <div class="rain weather-conditon-pic">
-              <a href="list-of-jackets.html" class="button3 weather-condition">Rain</a>
+              <div>
+                <a href="list-of-jackets.html" class="button3 weather-condition">Rain</a>
+              </div>
             </div>
             <div class="snow weather-conditon-pic">
-              <a href="list-of-jackets.html" class="button3 weather-condition">Snow</a>
+              <div>
+                <a href="list-of-jackets.html" class="button3 weather-condition">Snow</a>
+              </div>
             </div>
             <div class="extreme weather-conditon-pic">
-              <a href="list-of-jackets.html" class="button3 weather-condition">Extreme</a>
+              <div>
+                <a href="list-of-jackets.html" class="button3 weather-condition">Extreme</a>
+              </div>
             </div>
             <div class="urban weather-conditon-pic">
-              <a href="list-of-jackets.html" class="button3 weather-condition">Urban</a>
+              <div>
+                <a href="list-of-jackets.html" class="button3 weather-condition">Urban</a>
+              </div>
             </div>
           </section>
         </div>
@@ -86,35 +94,40 @@
         <h2 class="popular-styles-h2">Popular styles</h2>
         <section class="jacket-info-container">
           <div class="jacket-short-info">
-            <img class="jacket-1 jacket" src="/images/mehei-seamless-jacket-w-5f5f5bcaa5dc2.jpg" alt="mehei seamless jacket">
-            <p class="jacket-name">Freja</p>
-            <p>Technical jacket</p>
-            <p>1599 NOK</p>
-            <a href="jacket-specific.html" class="buy-now-link"><span class="buy-now-btn">See more</span></a> 
+            <a href="jacket-specific.html" class="inspect">
+              <img class="jacket-1 jacket" src="/images/mehei-seamless-jacket-w-5f5f5bcaa5dc2.jpg" alt="mehei seamless jacket">
+              <p class="jacket-name">Freja</p>
+              <p>Technical jacket</p>
+              <p>1599 NOK</p>
+
+            </a>
 
           </div>
           <div class="jacket-short-info">
-            <img class="jacket-2 jacket " src="/images/nordfjell-down-jacket-5f5883567a9b9.jpg" alt="nordfjell down jacket">
-            <p class="jacket-name">Loke</p>
-            <p>Down jacket</p>
-            <p>1999 NOK</p>
-            <a href="jacket-specific.html" class="buy-now-link"><span class="buy-now-btn">See more</span></a> 
+            <a href="jacket-specific.html" class="inspect">
+              <img class="jacket-2 jacket " src="/images/nordfjell-down-jacket-5f5883567a9b9.jpg" alt="nordfjell down jacket">
+              <p class="jacket-name">Loke</p>
+              <p>Down jacket</p>
+              <p>1999 NOK</p>
+            </a>
 
           </div>
           <div class="jacket-short-info">
-            <img class="jacket-3 jacket " src="/images/hovden-insulated-jacket-5f6dc15872b7c.jpg" alt="hovden insulated jacket">
-            <p class="jacket-name">Balder</p>
-            <p>Technical jacket</p>
-            <p>1299 NOK</p>
-            <a href="jacket-specific.html" class="buy-now-link"><span class="buy-now-btn">See more</span></a> 
+            <a href="jacket-specific.html" class="inspect">
+              <img class="jacket-3 jacket " src="/images/hovden-insulated-jacket-5f6dc15872b7c.jpg" alt="hovden insulated jacket">
+              <p class="jacket-name">Balder</p>
+              <p>Technical jacket</p>
+              <p>1299 NOK</p>
+            </a>
 
           </div>
           <div class="jacket-short-info">
-            <img class="jacket-4 jacket " src="/images/fykse-print-running-jacket-w-5f27c5b6d796c.jpg" alt="froland shell jacket">
-            <p class="jacket-name">Edda</p>
-            <p>Windpro fleece</p>
-            <p>399 NOK</p>
-            <a href="jacket-specific.html" class="buy-now-link"><span class="buy-now-btn">See more</span></a> 
+            <a href="jacket-specific.html" class="inspect">
+              <img class="jacket-4 jacket " src="/images/fykse-print-running-jacket-w-5f27c5b6d796c.jpg" alt="froland shell jacket">
+              <p class="jacket-name">Edda</p>
+              <p>Windpro fleece</p>
+              <p>399 NOK</p>
+            </a>
 
           </div>
         </section>
