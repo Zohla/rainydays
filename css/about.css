@@ -1,0 +1,25 @@
+/* ABOUT */
+.about-page-content {
+  margin: auto;
+  text-align: center;
+}
+
+.about-page-content {
+  display: flex;
+  background-image: url(/images/wojciech-then-DijA5f0voGQ-unsplash2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 30rem;
+}
+.about-page-txt {
+  max-width: 30rem;
+  color: var(--light-color);
+  margin: 8rem 2rem;
+  padding: 2rem;
+  background-color: rgba(10, 54, 65, 0.5);
+}
+
+.main-sub-page {
+  height: 100vh;
+}
