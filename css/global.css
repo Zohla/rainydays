@@ -56,6 +56,9 @@ header {
   justify-content: space-between;
   background-color: #e8edee;
 }
+.vh-fix {
+  min-height: 100%;
+}
 
 /* NAVIGATION */
 .show-in-hamburger {
@@ -121,6 +124,46 @@ header {
   color: var(--light-color);
   text-transform: uppercase;
   font-size: 1.75rem;
+}
+/* STYLES USED ON SEVERAL PAGES */
+/* JACKETS */
+
+.free-shipping {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0.8rem;
+}
+.jacket-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+.jacket-short-info img {
+  max-width: 15rem;
+}
+
+.jacket-info-container,
+.popular-styles-h2 {
+  background-color: var(--light-color);
+}
+.jacket-short-info {
+  background-color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+.jacket-short-info:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+.inspect p {
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+}
+.jacket-name {
+  font-size: 1.25rem;
 }
 
 /* FOOTER */

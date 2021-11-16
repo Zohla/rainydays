@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Rainydays</title>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homepage.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
     <!-- Hotjar Tracking Code for https://rainydaysclothes.netlify.app/ -->
@@ -21,36 +22,33 @@
     <header>  
       <a href="index.html" class="logo-align">
         <img id="logo" class="nav-logo" src="/images/RainyDays_Logo.png" alt="Rainydays Logo with the tagline pushing the comfort Zone">
-      </a>   
-      <nav class="nav-1">
-        <input class="menu-btn" type="checkbox" id="menu-btn">
-        <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
-        <div>
-          <ul class="nav-elements">
+      </a>
+
+      <nav class="nav-1" id="hamnav">
+        <label class="menu-icon" for="hamburger">&#9776;</label>
+        <input class="menu-btn" type="checkbox" id="hamburger">
+          <ul id="hamitems">
             <li class="nav-element nav-home visiting"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-element nav-about"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-element nav-contact" ><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search"></i> Search</a></li>
+            <li class="nav-element shopping-bag"><a href="checkout.html">Shopping Bag <i class="fas fa-shopping-bag" aria-label="Shopping bag"></i></a></li>
             <li class="nav-element show-in-hamburger"><a href="checkout.html" class="nav-link"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
-            <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user"></i> Log In</a></li>
           </ul>
-          <ul class="shopping-bag">
-            <li class="nav-element"><a href="checkout.html"><i class="fas fa-shopping-bag" aria-label="Shopping bag"></i> Shopping Bag</a></li>
-          </ul>
-        </div>
       </nav>
-      
-        
     </header>
       <main>
         <div class="hero" id="hero">
+          <div class="mobile"> 
+            <p>Shop <a href="list-of-jackets.html" class="mobile-gender-link">WOMEN</a></p>
+            <p>Shop <a href="list-of-jackets.html" class="mobile-gender-link">MEN</a></p>
+          </div>
           <div class="women-pic buy-gender">
             <div>
               <a href="list-of-jackets.html" class="button-3-clear">WOMEN</a>
             </div>
           </div>
           <div class="new-arrivals-containter">
-            <a href="list-of-jackets.html" class="button-3-clear button-new-arrivals">new arrivals</a>
+            <a href="list-of-jackets.html" class="button-3-clear">new arrivals</a>
           </div>
           <div class="men-pic buy-gender">
             <div>
@@ -60,8 +58,7 @@
         </div>
         <div class="new-arrivals-mobile">
           <h1>Ready for your next adventure?</h2>
-          <h2>See our newest gear</h3>
-          <a href="list-of-jackets.html" class="button-3-clear button-new-arrivals-mobile">new arrivals</a>
+          <a href="list-of-jackets.html" class="button-3-clear">new arrivals</a>
 
 
         </div>
@@ -93,16 +90,16 @@
 
         <h2 class="popular-styles-h2">Popular styles</h2>
         <section class="jacket-info-container">
+
           <div class="jacket-short-info">
             <a href="jacket-specific.html" class="inspect">
               <img class="jacket-1 jacket" src="/images/mehei-seamless-jacket-w-5f5f5bcaa5dc2.jpg" alt="mehei seamless jacket">
               <p class="jacket-name">Freja</p>
               <p>Technical jacket</p>
               <p>1599 NOK</p>
-
             </a>
-
           </div>
+
           <div class="jacket-short-info">
             <a href="jacket-specific.html" class="inspect">
               <img class="jacket-2 jacket " src="/images/nordfjell-down-jacket-5f5883567a9b9.jpg" alt="nordfjell down jacket">
@@ -110,8 +107,8 @@
               <p>Down jacket</p>
               <p>1999 NOK</p>
             </a>
-
           </div>
+
           <div class="jacket-short-info">
             <a href="jacket-specific.html" class="inspect">
               <img class="jacket-3 jacket " src="/images/hovden-insulated-jacket-5f6dc15872b7c.jpg" alt="hovden insulated jacket">
@@ -119,8 +116,8 @@
               <p>Technical jacket</p>
               <p>1299 NOK</p>
             </a>
-
           </div>
+
           <div class="jacket-short-info">
             <a href="jacket-specific.html" class="inspect">
               <img class="jacket-4 jacket " src="/images/fykse-print-running-jacket-w-5f27c5b6d796c.jpg" alt="froland shell jacket">
@@ -128,8 +125,8 @@
               <p>Windpro fleece</p>
               <p>399 NOK</p>
             </a>
-
           </div>
+          
         </section>
 
         <div class="index-about-container">

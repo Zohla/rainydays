@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Rainydays | Freja</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/jacket-specific.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
     <!-- Hotjar Tracking Code for https://rainydaysclothes.netlify.app/ -->
@@ -17,34 +18,24 @@
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   </head>
-  <body class="vh-fix">
+  <body class="vh-fix"> <!-- !used class?  -->
     <header>  
       <a href="index.html" class="logo-align">
         <img id="logo" class="nav-logo" src="/images/RainyDays_Logo.png" alt="Rainydays Logo with the tagline pushing the comfort Zone">
-      </a>   
-      <nav class="nav-1">
-        <input class="menu-btn" type="checkbox" id="menu-btn">
-        <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
-        <ul class="nav-elements">
-          <li class="nav-element nav-home visiting"><a href="index.html">Home</a></li>
-          <li class="nav-element nav-about"><a href="about.html">About</a></li>
-          <li class="nav-element nav-contact" ><a href="contact.html">Contact</a></li>
-          <li class="nav-element show-in-hamburger"><a href="checkout.html"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user"></i> Log In</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search"></i> Search</a></li>
-
-        </ul>
+      </a>
+      <nav class="nav-1" id="hamnav">
+        <label class="menu-icon" for="hamburger">&#9776;</label>
+        <input class="menu-btn" type="checkbox" id="hamburger">
+          <ul id="hamitems">
+            <li class="nav-element nav-home visiting"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-element nav-about"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-element nav-contact" ><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-element shopping-bag"><a href="checkout.html">Shopping Bag <i class="fas fa-shopping-bag" aria-label="Shopping bag"></i></a></li>
+            <li class="nav-element show-in-hamburger"><a href="checkout.html" class="nav-link"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
+          </ul>
       </nav>
-      <nav class="nav-2">    
-        <ul class="nav-interaction-elements">
-          <li class="nav-element show-in-hamburger"><a href="checkout.html"><i class="fas fa-shopping-bag" aria-label="Shopping bag"></i> Shopping Bag</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user" aria-label="Log in"></i> Log In</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search" aria-label="Search"></i> Search</a></li>
-        </ul>
-      </nav>
-        
     </header>
-      <main class="">
+      <main>
         <p class="free-shipping">Free shipping for orders over NOK 2000,-</p>
         <p class="nav-tree"><a href="list-of-jackets.html"><span>jackets</span></a>/ Freja</p>
         <h1 class="h1-sub-pages">Freja</h1>
@@ -58,8 +49,7 @@
               perfect for rainy days. The covering hood is
               adjustable with drawstring and the arms have 
               velcro adjustment as well as inner fabric that
-              covers your upper hand. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                 
+              covers your upper hand. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.               
             </p>
             <p class="price">NOK 1599</p>
             <div class="options-buy">
@@ -74,14 +64,11 @@
                   <option value="44">44</option>
                 </select>
               </form>
-              
               <a href="checkout.html" class="add-to-cart"><span>Add to cart</span></a>
             </div>
             <p class="delivery-time"><i class="fas fa-truck"></i> Delivery time 3-6 days</p> 
-            
           </section>
         </div>
-        
         <section class="review-container">
           <h3 class="review-heading">Reviews</h3>
           <h4 class="reviewer-name">Claire <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></h4> 
@@ -89,10 +76,8 @@
                 this jacket. I would love other colors to choose 
                 from. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </p>
-          <p class="read-more">Read more reviews</p>
-
+          <a href="#"><p class="read-more">Read more reviews</p></a>
         </section>
-            
       </main>
       <footer class="sub-page-footer">
         <ul class="first-footer-list">
@@ -113,9 +98,6 @@
           <li><a href="list-of-jackets.html">Women</a></li>
           <li><a href="list-of-jackets.html">Men</a></li>
         </ul>
-        
       </footer>
-  
   </body>
-  
 </html>

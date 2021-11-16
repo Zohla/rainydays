@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Rainydays|About</title>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/b4befb0d1e.js" crossorigin="anonymous"></script>  
       <!-- Hotjar Tracking Code for https://rainydaysclothes.netlify.app/ -->
@@ -22,28 +23,19 @@
     <header>  
       <a href="index.html" class="logo-align">
         <img id="logo" class="nav-logo" src="/images/RainyDays_Logo.png" alt="Rainydays Logo with the tagline pushing the comfort Zone">
-      </a>   
-      <nav class="nav-1">
-        <input class="menu-btn" type="checkbox" id="menu-btn">
-        <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
-        <ul class="nav-elements">
-          <li class="nav-element nav-home "><a href="index.html">Home</a></li>
-          <li class="nav-element nav-about visiting"><a href="about.html">About</a></li>
-          <li class="nav-element nav-contact" ><a href="contact.html">Contact</a></li>
-          <li class="nav-element show-in-hamburger"><a href="checkout.html"><i class="fas fa-shopping-bag" aria-label="Shopping bag"></i> Shopping Bag</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="far fa-user" aria-label="Log in"></i> Log In</a></li>
-          <li class="nav-element show-in-hamburger"><a href="#"><i class="fas fa-search" aria-label="Search"></i> Search</a></li>
+      </a>
 
-        </ul>
+      <nav class="nav-1" id="hamnav">
+        <label class="menu-icon" for="hamburger">&#9776;</label>
+        <input class="menu-btn" type="checkbox" id="hamburger">
+          <ul id="hamitems">
+            <li class="nav-element nav-home visiting"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-element nav-about"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-element nav-contact" ><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-element shopping-bag"><a href="checkout.html">Shopping Bag <i class="fas fa-shopping-bag" aria-label="Shopping bag"></i></a></li>
+            <li class="nav-element show-in-hamburger"><a href="checkout.html" class="nav-link"><i class="fas fa-shopping-bag"></i> Shopping Bag</a></li>
+          </ul>
       </nav>
-      <nav class="nav-2">    
-        <ul class="nav-interaction-elements">
-          <li class="nav-element nav-with-icons"><a href="#"><i class="fas fa-search"></i> <p>Search</p></a></li>
-          <li class="nav-element nav-with-icons"><a href="#"><i class="far fa-user"></i><p>Log In</p> </a></li>
-          <li class="nav-element nav-with-icons"><a href="checkout.html"><i class="fas fa-shopping-bag"></i><p>Shopping Bag</p></a></li>
-        </ul>
-      </nav>
-        
     </header>
     
       <main class="main-sub-page">

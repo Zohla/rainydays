@@ -101,35 +101,6 @@
 .urban {
   background-image: url(../images/urban.jpg);
 }
-.jacket-info-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 3rem;
-}
-.jacket-short-info img {
-  max-width: 15rem;
-}
-
-.jacket-info-container,
-.popular-styles-h2 {
-  background-color: var(--light-color);
-}
-.jacket-short-info {
-  background-color: #fff;
-  text-align: center;
-  margin-top: 1rem;
-}
-.jacket-short-info:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-}
-.inspect p {
-  color: var(--dark-color);
-  margin-bottom: 0.5rem;
-}
-.jacket-name {
-  font-size: 1.25rem;
-}
 
 /* INDEX-ABOUT */
 .index-about-container {
