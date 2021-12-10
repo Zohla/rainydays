@@ -38,13 +38,7 @@
 .options-buy {
   display: flex;
 }
-.add-to-cart {
-  width: 10rem;
-  background-color: #fff;
-  align-self: center;
-  background-color: var(--light-color);
-  padding: 0.445rem;
-}
+
 .fa-truck {
   color: var(--dark-color);
   font-size: 1.5rem;
