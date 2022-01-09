@@ -52,3 +52,6 @@
   background-color: rgba(63, 98, 106, 0.9);
   color: var(--light-color);
 }
+.incorrect {
+  border: solid 1px red;
+}

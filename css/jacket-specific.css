@@ -54,7 +54,6 @@
   border: solid 2px var(--dark-color);
   background-color: var(--light-color);
   text-align: center;
-  animation: ease-in 5s;
 }
 .hide-msg {
   display: none;

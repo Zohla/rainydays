@@ -16,9 +16,8 @@ jacketSizeSelect.addEventListener("change", (e) => {
 
 addToCartBtn.addEventListener("click", (e) => {
   /*  e.preventDefault(); */
-  /* console.log(pickedSize); */
-  /*   cartConfMessage.classList.toggle("hide-msg");
-   */ if (pickedSize !== undefined && pickedSize !== "choose") {
+
+  if (pickedSize !== undefined && pickedSize !== "choose") {
     console.log(pickedSize);
     cartConfMessage.classList.remove("hide-msg");
     sizeErrorMsg.classList.add("hide-msg");
