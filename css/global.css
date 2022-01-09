@@ -245,26 +245,12 @@ footer {
   .nav-1 ul:first-child {
     display: none;
   }
-  /* .menu-btn {
-    display: none;
-  }*/
-  /*  #menu-btn:checked ~ .nav-elements {
-    display: block;
-  } */
-  /*  .menu-icon {
-    color: var(--dark-color);
-    margin: 5px;
-    padding: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    order: 2;
-  } */
 }
 
 @media (max-width: 650px) {
-  .nav-element:last-child {
+  /* .nav-element:last-child {
     display: none;
-  }
+  } */
   #hamitems a {
     box-sizing: border-box;
     display: block;

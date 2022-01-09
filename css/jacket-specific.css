@@ -89,3 +89,12 @@
   color: var(--contrast-color);
   cursor: pointer;
 }
+
+@media (max-width: 650px) {
+  .container-jacket-specific {
+    flex-direction: column;
+  }
+  .jacket-specific-img {
+    height: 15rem;
+  }
+}

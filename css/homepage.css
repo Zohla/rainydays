@@ -147,6 +147,7 @@
     display: block;
     /* display: flex; */
   }
+
   .hero {
     justify-content: center;
     flex-direction: column;
@@ -157,6 +158,7 @@
   }
   .mobile p:first-child {
     margin-right: 10rem;
+    margin-bottom: 1rem;
   }
   .mobile-gender-link {
     display: inline-block;
