@@ -39,10 +39,33 @@
   display: flex;
 }
 
+#size:hover {
+  background-color: #fff;
+}
+
 .fa-truck {
   color: var(--dark-color);
   font-size: 1.5rem;
   margin-top: 1rem;
+}
+.cart-add-conf-msg {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: solid 2px var(--dark-color);
+  background-color: var(--light-color);
+  text-align: center;
+  animation: ease-in 5s;
+}
+.hide-msg {
+  display: none;
+}
+.size-error-msg {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: solid 2px var(--dark-color);
+  background-color: salmon;
+  text-align: center;
+  font-weight: bold;
 }
 
 .review-container {
