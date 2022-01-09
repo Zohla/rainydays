@@ -47,20 +47,20 @@ function validateForm() {
   let validForm = true;
 
   if (validateSubject() == false) {
-    subjectLabel.innerHTML += `<span> Subject must be longer.</span>`;
+    subjectLabel.innerHTML += `<i> Subject must be longer.</i>`;
     validForm = false;
   } else {
     subjectLabel.innerHTML = "Subject:";
   }
 
   if (validateEmail() == false) {
-    mailLabel.innerHTML += `<span> Please fill in a valid emailadress.</span>`;
+    mailLabel.innerHTML += `<i> Please fill in a valid emailadress.</i>`;
     validForm = false;
   } else {
     mailLabel.innerHTML = "Email:";
   }
   if (validateMsg() == false) {
-    msgLabel.innerHTML += `<span> Please fill in a message.</span>`;
+    msgLabel.innerHTML += `<i> Please fill in a message.</i>`;
     validForm = false;
   } else {
     msgLabel.innerHTML = "Message";
@@ -76,7 +76,7 @@ formContainer.addEventListener("submit", (e) => {
   //(hacky way of) showing and removing errormessages
   mailLabel.innerHTML = "Email:";
   subjectLabel.innerHTML = "Subject:";
-  msgLabel.innerHTML = "Name:";
+  msgLabel.innerHTML = "Message:";
   if (validateForm() == false) {
     console.log("crap");
   } else {

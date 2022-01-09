@@ -4,26 +4,28 @@
   text-align: center;
   width: 50%;
   margin: auto;
-  font-size: 1.25rem;
 }
 .contact-alts {
-  margin: 1rem;
+  margin: 2rem 0 1rem;
+  padding: 1rem;
+  border: solid 2px var(--light-color);
 }
 .contact-alts p {
   margin-top: 1rem;
 }
 .contact-alts p span {
   font-weight: bold;
-  margin-top: 2rem;
 }
 .strong {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+  font-size: 1.25rem;
+  margin: 2rem 0 1rem;
 }
 .contact-form {
   padding-top: 2rem;
   margin: auto;
   width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 .contact-form label {
   color: var(--dark-color);
@@ -51,7 +53,18 @@
   border-color: var(--contrast-color);
   background-color: rgba(63, 98, 106, 0.9);
   color: var(--light-color);
+  cursor: pointer;
 }
 .incorrect {
   border: solid 1px red;
+}
+@media (max-width: 650px) {
+  .contact-text,
+  .contact-form {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .contact-form input {
+    width: 100%;
+  }
 }
