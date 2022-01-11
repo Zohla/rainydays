@@ -136,7 +136,7 @@ main {
 }
 /* STYLES USED ON SEVERAL PAGES */
 
-input[type="button"] {
+input {
   -webkit-appearance: none;
 }
 .action-btn {
