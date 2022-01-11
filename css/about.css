@@ -4,7 +4,6 @@
   margin: auto;
   text-align: center;
 }
-
 .about-page-picture {
   display: flex;
   background-image: url(/images/wojciech-then-DijA5f0voGQ-unsplash2.jpg);
@@ -19,7 +18,6 @@
   margin: auto;
   padding: 1rem;
 }
-
 .main-faq-container {
   width: 75%;
   margin: auto;

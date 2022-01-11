@@ -1,8 +1,8 @@
 # rainydays -school project
 
-Rainydays is a fictional company that sells clothes. 
+Rainydays is a fictional company that sells clothes.
 
-The project started as a style tile before it became a prototype. 
+The project started as a style tile before it became a prototype.
 
 After that the assignment was to build it with HTML and CSS.
 
@@ -28,3 +28,4 @@ A checkout success
 About
 Contact
 
+Later we kept on building on the page adding JS and did a research project with interaction design to improve the page.

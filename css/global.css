@@ -174,7 +174,6 @@ main {
 .jacket-short-info img {
   max-width: 15rem;
 }
-
 .jacket-info-container,
 .popular-styles-h2 {
   background-color: var(--light-color);
@@ -211,7 +210,6 @@ footer {
   margin-right: 2rem;
   font-size: 3rem;
 }
-
 .socials-footer li a i {
   color: var(--dark-color);
 }
@@ -236,13 +234,16 @@ footer {
 .second-footer-list li {
   margin-bottom: 1rem;
 }
+
 @media (max-width: 1000px) {
   #logo {
     max-height: 7rem;
   }
-
   .nav-1 {
     display: flex;
+  }
+  .nav-1 ul li {
+    margin-left: 0;
   }
   .nav-element {
     padding: 20px;
@@ -283,14 +284,19 @@ footer {
     max-width: 7rem;
   }
 
-  .first-footer-list,
-  .second-footer-list {
-    display: none;
-  }
   footer {
-    height: 7rem;
+    height: auto;
+    flex-direction: column;
   }
   .socials-footer {
     margin: 1rem auto;
+    order: 1;
+  }
+  .first-footer-list {
+    order: 3;
+  }
+  .second-footer-list {
+    order: 2;
+    margin-left: 1rem;
   }
 }

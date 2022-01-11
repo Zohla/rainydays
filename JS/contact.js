@@ -73,7 +73,6 @@ const formContainer = document.querySelector(".contact-form");
 
 formContainer.addEventListener("submit", (e) => {
   e.preventDefault();
-  //(hacky way of) showing and removing errormessages
   mailLabel.innerHTML = "Email:";
   subjectLabel.innerHTML = "Subject:";
   msgLabel.innerHTML = "Message:";
