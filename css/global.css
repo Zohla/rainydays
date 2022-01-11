@@ -81,10 +81,7 @@ header {
   padding: 10px;
   text-align: center;
 }
-/* .menu-btn,
-.menu-icon {
-  display: none;
-} */
+
 .nav-1 {
   order: 1;
   margin: 1rem 0 0 1rem;
@@ -268,6 +265,9 @@ footer {
   }
   #hamnav input:checked ~ .show-in-hamburger {
     display: block;
+  }
+  .jacket-short-info img {
+    max-width: 7rem;
   }
 
   .first-footer-list,
