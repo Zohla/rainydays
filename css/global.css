@@ -137,6 +137,7 @@ main {
 /* STYLES USED ON SEVERAL PAGES */
 
 .action-btn {
+  color: black;
   width: 10rem;
   align-self: center;
   background-color: var(--contrast-color);
