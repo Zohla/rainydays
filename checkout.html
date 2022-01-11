@@ -107,10 +107,10 @@
       <h3 class="payment-heading">Payment</h3>
       <form action="" class="payment-form">
         <div class="payment-option">
-          <input type="radio" id="Visa" name="payment" value="visa" />
-          <label class="radio-text" for="visa">Visa</label><br />
+          <input type="radio" id="Visa" name="payment" value="visa" checked />
+          <label class="radio-text visa" for="visa">Visa</label><br />
           <input type="radio" id="PayPal" name="payment" value="paypal" />
-          <label class="radio-text" for="paypal">PayPal</label><br />
+          <label class="radio-text paypal" for="paypal">PayPal</label><br />
         </div>
         <label for="name">Name:</label><br />
         <input type="text" id="name" name="name" /><br />
@@ -120,8 +120,8 @@
         <input type="text" id="po-box" name="po-box" /><br />
         <label for="phone">Phone:</label><br />
         <input type="text" id="phone" name="phone" /><br />
-        <label for="visa">Card number:</label><br />
-        <input type="visa" id="visa" name="visa" />
+        <label for="cardNum" class="cardNum">Card number:</label><br />
+        <input type="cardNum" id="cardNum" name="cardNum" />
       </form>
       <a href="checkoutsuccess.html" class="checkout-btn">Pay</a>
     </main>
