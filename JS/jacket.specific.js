@@ -34,8 +34,10 @@ const readMoreLink = document.querySelector(".read-more");
 const moreReviews = document.querySelectorAll(".review-cont");
 
 readMoreLink.addEventListener("click", () => {
+  readMoreLink.innerHTML = "Hide reviews";
   for (let i = 0; i < moreReviews.length; i++) {
     moreReviews[i].classList.toggle("hide");
+    if (moreReviews[i].classList.contains("hide"))
+      readMoreLink.innerHTML = "Read more reviews";
   }
-  readMoreLink.innerHTML = "Hide reviews";
 });
