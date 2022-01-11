@@ -84,6 +84,9 @@
 .reviewer-name {
   justify-self: center;
 }
+.hide {
+  display: none;
+}
 .read-more {
   margin-top: 1rem;
   font-size: 0.75rem;

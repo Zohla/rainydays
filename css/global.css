@@ -9,6 +9,7 @@
   padding: 0;
   border: 0;
 }
+
 @font-face {
   font-family: "Roboto", sans-serif;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -57,7 +58,18 @@ header {
   background-color: #e8edee;
 }
 .vh-fix {
-  min-height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* NAVIGATION */
@@ -238,6 +250,9 @@ footer {
   }
   .nav-1 ul:first-child {
     display: none;
+  }
+  .nav-1 ul li {
+    margin-left: 0.5rem;
   }
 }
 
