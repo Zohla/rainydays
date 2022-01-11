@@ -74,13 +74,13 @@ function validateChackoutForm() {
     adressLabel.innerHTML = "Adress:";
   }
   if (validatePhone() == false) {
-    phoneLabel.innerHTML += `<i> Please fill in a phone number.</i>`;
+    phoneLabel.innerHTML += `<i> Please fill in a valid phone number.</i>`;
     validForm = false;
   } else {
     phoneLabel.innerHTML = "Phone:";
   }
   if (validateCard() == false) {
-    cardNumLabel.innerHTML += `<i> Please fill in a card number.</i>`;
+    cardNumLabel.innerHTML += `<i> Please fill in a valid card number.</i>`;
     validForm = false;
   } else {
     cardNumLabel.innerHTML = "Cardnumber:";
