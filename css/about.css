@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.about-page-content {
+.about-page-picture {
   display: flex;
   background-image: url(/images/wojciech-then-DijA5f0voGQ-unsplash2.jpg);
   background-size: cover;
@@ -13,19 +13,19 @@
   height: 30rem;
 }
 .about-page-txt {
-  max-width: 30rem;
-  color: var(--light-color);
-  margin: 8rem 2rem;
-  padding: 2rem;
-  background-color: rgba(10, 54, 65, 0.5);
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
 }
 
 .main-sub-page {
-  height: 100vh;
+  height: calc(100vh - 363px);
 }
 .main-faq-container {
   width: 75%;
   margin: auto;
+  height: calc(100vh - 400px);
 }
 .question-container:last-child {
   margin-bottom: 2rem;
