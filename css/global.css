@@ -91,7 +91,6 @@ main {
   flex-grow: 1;
   flex-basis: 0;
   padding: 10px;
-  text-align: center;
 }
 
 .nav-1 {
@@ -136,9 +135,6 @@ main {
 }
 /* STYLES USED ON SEVERAL PAGES */
 
-input {
-  -webkit-appearance: none;
-}
 .action-btn {
   width: 10rem;
   align-self: center;
@@ -254,19 +250,15 @@ footer {
   .nav-1 ul:first-child {
     display: none;
   }
-  .nav-1 ul li {
+  .nav-element {
     margin-left: 0.5rem;
+    justify-self: flex-start;
   }
 }
 
 @media (max-width: 650px) {
-  #hamitems a {
-    box-sizing: border-box;
-    display: block;
-    padding: 0.25rem;
-    color: var(--dark-color);
-    font-weight: 600;
-    border-bottom: 2px solid var(--medium-green);
+  #logo {
+    max-height: 5rem;
   }
   #hamnav label {
     display: inline-block;
@@ -277,6 +269,9 @@ footer {
   #hamitems {
     display: none;
     order: 1;
+  }
+  .menu-icon:hover {
+    cursor: pointer;
   }
   #hamnav input:checked ~ #hamitems {
     display: block;
