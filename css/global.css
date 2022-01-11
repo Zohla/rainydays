@@ -2,7 +2,7 @@
   --light-color: #e8edee;
   --medium-green: #3f626a;
   --dark-color: #0a3641;
-  --contrast-color: #df6800;
+  --contrast-color: #ce6000;
 }
 * {
   margin: 0;
@@ -233,9 +233,6 @@ footer {
     max-height: 7rem;
   }
 
-  /* .menu-icon {
-    display: inline-block;
-  } */
   .nav-1 {
     display: flex;
   }
@@ -248,9 +245,6 @@ footer {
 }
 
 @media (max-width: 650px) {
-  /* .nav-element:last-child {
-    display: none;
-  } */
   #hamitems a {
     box-sizing: border-box;
     display: block;

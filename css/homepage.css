@@ -101,6 +101,44 @@
 .urban {
   background-image: url(../images/urban.jpg);
 }
+.join {
+  background-color: var(--light-color);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--contrast-color);
+}
+.join p:first-child {
+  margin: 0rem 1rem 1.5rem 2rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+.join-btn {
+  border: 1px solid var(--dark-color);
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  width: 5rem;
+  height: 1.5rem;
+  text-align: center;
+  align-self: center;
+}
+.join-btn:hover {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+.interact-socials {
+  background-color: var(--dark-color);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: var(--light-color);
+}
 
 /* INDEX-ABOUT */
 .index-about-container {

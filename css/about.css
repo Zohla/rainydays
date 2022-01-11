@@ -23,3 +23,15 @@
 .main-sub-page {
   height: 100vh;
 }
+.main-faq-container {
+  width: 75%;
+  margin: auto;
+}
+.question-container:last-child {
+  margin-bottom: 2rem;
+}
+@media (max-width: 650px) {
+  .main-faq-container {
+    width: 85%;
+  }
+}
