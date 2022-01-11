@@ -92,6 +92,12 @@
   background-color: var(--dark-color);
   color: var(--light-color);
 }
+.incorrect {
+  border-color: red;
+}
+.hide {
+  display: none;
+}
 /* CHECKOUT-SUCCESS */
 .checkout-success {
   display: flex;

@@ -77,7 +77,6 @@ formContainer.addEventListener("submit", (e) => {
   subjectLabel.innerHTML = "Subject:";
   msgLabel.innerHTML = "Message:";
   if (validateForm() == false) {
-    console.log("crap");
   } else {
     formContainer.innerHTML = `<h3 class="succes-message">Your form is submitted. Thank you for reaching out to us!</h3>`;
   }
