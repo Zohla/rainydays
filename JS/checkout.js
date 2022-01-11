@@ -9,10 +9,10 @@ function validateName() {
   const fullName = document.querySelector("#name");
 
   if (fullName.value.length > 0) {
-    fullName.classList.remove("incorrect");
+    fullNameLabel.classList.remove("incorrect");
     return true;
   } else {
-    fullName.classList.add("incorrect");
+    fullNameLabel.classList.add("incorrect");
     return false;
   }
 }
@@ -20,10 +20,10 @@ function validateAdress() {
   const adress = document.querySelector("#adress");
 
   if (adress.value.length > 0) {
-    adress.classList.remove("incorrect");
+    adressLabel.classList.remove("incorrect");
     return true;
   } else {
-    adress.classList.add("incorrect");
+    adressLabel.classList.add("incorrect");
     return false;
   }
 }
@@ -31,10 +31,10 @@ function validatePhone() {
   const phone = document.querySelector("#phone");
 
   if (phone.value.length > 7) {
-    phone.classList.remove("incorrect");
+    phoneLabel.classList.remove("incorrect");
     return true;
   } else {
-    phone.classList.add("incorrect");
+    phoneLabel.classList.add("incorrect");
     return false;
   }
 }
@@ -49,10 +49,10 @@ function validateCard() {
     document.querySelector("#Visa").checked &&
     cardNum.value.length > 10
   ) {
-    cardNum.classList.remove("incorrect");
+    cardNumLabel.classList.remove("incorrect");
     return true;
   } else {
-    cardNum.classList.add("incorrect");
+    cardNumLabel.classList.add("incorrect");
     return false;
   }
 }

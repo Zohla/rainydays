@@ -93,7 +93,7 @@
   color: var(--light-color);
 }
 .incorrect {
-  border-color: red;
+  color: red;
 }
 .hide {
   display: none;
