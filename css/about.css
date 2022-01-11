@@ -20,12 +20,12 @@
 }
 
 .main-sub-page {
-  height: calc(100vh - 363px);
+  height: 100vh;
 }
 .main-faq-container {
   width: 75%;
   margin: auto;
-  height: calc(100vh - 400px);
+  height: 100vh;
 }
 .question-container:last-child {
   margin-bottom: 2rem;
