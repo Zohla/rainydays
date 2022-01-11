@@ -136,8 +136,10 @@ main {
 }
 /* STYLES USED ON SEVERAL PAGES */
 
+input[type="button"] {
+  -webkit-appearance: none;
+}
 .action-btn {
-  color: black;
   width: 10rem;
   align-self: center;
   background-color: var(--contrast-color);
