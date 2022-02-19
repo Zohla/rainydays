@@ -23,7 +23,7 @@ const productPrice = document.querySelector(".price");
 const navTree = document.querySelector(".nav-tree");
 const checkoutLink = document.querySelector(".checkout-link");
 
-const url = `http://wp-rainydays.maweb.tech/wp-json/wc/store/products/${productId}`;
+const url = `https://wp-rainydays.maweb.tech/wp-json/wc/store/products/${productId}`;
 
 console.log(url);
 

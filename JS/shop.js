@@ -1,4 +1,4 @@
-const url = "http://wp-rainydays.maweb.tech/wp-json/wc/store/products";
+const url = "https://wp-rainydays.maweb.tech/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products");
 
 async function getProducts() {
