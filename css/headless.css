@@ -13,6 +13,8 @@
 }
 .product img {
   width: 75%;
+  /* max-width: 399px; */
+  max-height: 427px;
   align-self: center;
 }
 .product p {
