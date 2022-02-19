@@ -193,7 +193,18 @@ main {
 .jacket-name {
   font-size: 1.25rem;
 }
-
+.product-name-h2 {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+.strike-old-price {
+  text-decoration: line-through;
+  margin-right: 0.5rem;
+}
+.sale-price {
+  font-weight: 600;
+  color: var(--contrast-color);
+}
 /* FOOTER */
 footer {
   display: flex;
