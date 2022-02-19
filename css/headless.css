@@ -1,0 +1,40 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product a {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e8edee;
+  margin: 0.5rem;
+}
+.product img {
+  width: 75%;
+  align-self: center;
+}
+.product p {
+  text-align: center;
+}
+.product_short_description {
+  padding: 1rem;
+}
+.price {
+  margin-top: 0.5rem;
+}
+a:visited {
+  color: black;
+}
+@media (max-width: 1155px) {
+  .product {
+    min-width: 140px;
+    max-width: 40%;
+  }
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
