@@ -25,8 +25,6 @@ const checkoutLink = document.querySelector(".checkout-link");
 
 const url = `https://wp-rainydays.maweb.tech/wp-json/wc/store/products/${productId}`;
 
-console.log(url);
-
 async function getProduct() {
   try {
     const response = await fetch(url);
