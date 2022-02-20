@@ -24,6 +24,10 @@
 .checkout-item-qty {
   align-self: center;
 }
+.product-name-checkout,
+.product-size {
+  margin-left: 0.5rem;
+}
 .cart-summary {
   width: 200px;
   display: flex;
