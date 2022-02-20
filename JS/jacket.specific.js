@@ -14,7 +14,6 @@ let pickedSize;
 const querystring = document.location.search;
 const params = new URLSearchParams(querystring);
 const productId = params.get("id");
-console.log(productId);
 const productContainer = document.querySelector(".container-jacket-specific");
 const h1JacketName = document.querySelector(".h1-sub-pages");
 const jacketImg = document.querySelector(".jacket-specific-img");
@@ -39,12 +38,21 @@ async function getProduct() {
 getProduct();
 
 function createHTML(product) {
-  navTree.innerHTML += `${product.name}`;
-  h1JacketName.innerHTML = `${product.name}`;
-  jacketImg.src = `${product.images[0].src}`;
-  jacketDescription.innerHTML += `${product.description}`;
-  productPrice.innerHTML = `$ ${product.prices.price}`;
-  checkoutLink.href = `checkout.html?id=${product.id}`;
+  if (`${product.on_sale}` == "true") {
+    navTree.innerHTML += `${product.name}`;
+    h1JacketName.innerHTML = `${product.name}`;
+    jacketImg.src = `${product.images[0].src}`;
+    jacketDescription.innerHTML += `${product.description}`;
+    productPrice.innerHTML = `<p><span class="strike-old-price">${product.prices.regular_price} ${product.prices.currency_symbol}</span><span class="sale-price">${product.prices.sale_price} ${product.prices.currency_symbol}</span></p>`;
+    checkoutLink.href = `checkout.html?id=${product.id}`;
+  } else {
+    navTree.innerHTML += `${product.name}`;
+    h1JacketName.innerHTML = `${product.name}`;
+    jacketImg.src = `${product.images[0].src}`;
+    jacketDescription.innerHTML += `${product.description}`;
+    productPrice.innerHTML = `$ ${product.prices.price}`;
+    checkoutLink.href = `checkout.html?id=${product.id}`;
+  }
 }
 
 jacketSizeSelect.addEventListener("change", (e) => {
