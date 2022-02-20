@@ -21,6 +21,8 @@ const jacketDescription = document.querySelector(".product-info");
 const productPrice = document.querySelector(".price");
 const navTree = document.querySelector(".nav-tree");
 const checkoutLink = document.querySelector(".checkout-link");
+const updateShoppingbagLink = document.querySelector(".updateShoppingbag");
+let itemsInshoppingBag = [];
 
 const url = `https://wp-rainydays.maweb.tech/wp-json/wc/store/products/${productId}`;
 
@@ -28,7 +30,6 @@ async function getProduct() {
   try {
     const response = await fetch(url);
     const getResults = await response.json();
-    console.log(getResults);
     createHTML(getResults);
   } catch (error) {
     console.log(error);
@@ -38,21 +39,18 @@ async function getProduct() {
 getProduct();
 
 function createHTML(product) {
+  navTree.innerHTML += `${product.name}`;
+  h1JacketName.innerHTML = `${product.name}`;
+  jacketImg.src = `${product.images[0].src}`;
+  jacketDescription.innerHTML += `${product.description}`;
+  /* itemsInshoppingBag.push(product); */
   if (`${product.on_sale}` == "true") {
-    navTree.innerHTML += `${product.name}`;
-    h1JacketName.innerHTML = `${product.name}`;
-    jacketImg.src = `${product.images[0].src}`;
-    jacketDescription.innerHTML += `${product.description}`;
     productPrice.innerHTML = `<p><span class="strike-old-price">${product.prices.regular_price} ${product.prices.currency_symbol}</span><span class="sale-price">${product.prices.sale_price} ${product.prices.currency_symbol}</span></p>`;
-    checkoutLink.href = `checkout.html?id=${product.id}`;
   } else {
-    navTree.innerHTML += `${product.name}`;
-    h1JacketName.innerHTML = `${product.name}`;
-    jacketImg.src = `${product.images[0].src}`;
-    jacketDescription.innerHTML += `${product.description}`;
     productPrice.innerHTML = `$ ${product.prices.price}`;
-    checkoutLink.href = `checkout.html?id=${product.id}`;
   }
+  checkoutLink.href = `checkout.html?id=${product.id}`;
+  updateShoppingbagLink.href = `checkout.html?id=${product.id}`;
 }
 
 jacketSizeSelect.addEventListener("change", (e) => {
