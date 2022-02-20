@@ -17,14 +17,17 @@ const total = document.querySelector(".total");
 const url = `https://wp-rainydays.maweb.tech/wp-json/wc/store/products/${productId}`;
 
 async function getProduct() {
-  try {
-    const response = await fetch(url);
-    const getResults = await response.json();
-    console.log(getResults);
-    createHTML(getResults);
-  } catch (error) {
-    console.log(error);
-    cartContainer.innerHTML = "<p>Sorry, an error occured</p>";
+  if (!querystring) {
+    cartContainer.innerHTML = "<p>No items in cart</p>";
+  } else {
+    try {
+      const response = await fetch(url);
+      const getResults = await response.json();
+      createHTML(getResults);
+    } catch (error) {
+      console.log(error);
+      cartContainer.innerHTML = "<p>Sorry, an error occured</p>";
+    }
   }
 }
 getProduct();
