@@ -38,7 +38,7 @@ function createHTML(product) {
 
   productImg.src = `${product.images[0].src}`;
   productNameCart.innerHTML = `${product.name}`;
-  productSizeContainer.innerHTML = `${productSize}`;
+  productSizeContainer.innerHTML += `${productSize}`;
   productPrice.innerHTML = `$${product.prices.price}`;
   productTotal.innerHTML = `$${product.prices.price}`;
 
