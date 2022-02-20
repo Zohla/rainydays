@@ -7,7 +7,6 @@ async function getProducts() {
     const response = await fetch(url);
     const getResults = await response.json();
     createHTML(getResults);
-    /* createHTMLold(getResults); */
   } catch (error) {
     console.log(error);
   }
@@ -27,7 +26,17 @@ function createHTML(products) {
         </a>
         </div>`;
     } else {
-      nonNewArrivals.innerHTML += `<div class="product">
+      if (`${product.on_sale}` == "true") {
+        nonNewArrivals.innerHTML += `<div class="product">
+        <a href="jacket-specific.html?id=${product.id}" class='inspect jacket-short-info'>
+        <h2 class="product-name-h2">${product.name}</h2>
+        <img src="${product.images[0].src}" alt="${product.name}">
+        <p class="product_short_description"> ${product.short_description}</p>
+        <p><span class="strike-old-price">${product.prices.regular_price} ${product.prices.currency_symbol}</span><span class="sale-price">${product.prices.sale_price} ${product.prices.currency_symbol}</span></p>
+        </a>
+        </div>`;
+      } else {
+        nonNewArrivals.innerHTML += `<div class="product">
         <a href="jacket-specific.html?id=${product.id}" class='inspect jacket-short-info'>
         <h2 class="product-name-h2">${product.name}</h2>
         <img src="${product.images[0].src}" alt="${product.name}">
@@ -35,6 +44,7 @@ function createHTML(products) {
         <p class="price">${product.prices.price} ${product.prices.currency_symbol} </p>
         </a>
         </div>`;
+      }
     }
   });
 }
