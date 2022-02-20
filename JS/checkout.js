@@ -1,3 +1,55 @@
+//get data from headless CMS and output on page
+
+const querystring = document.location.search;
+const params = new URLSearchParams(querystring);
+const productId = params.get("id");
+const productSize = params.get("size");
+
+const cartContainer = document.querySelector(".cart-content");
+const productImg = document.querySelector(".item-checkout-pic");
+const productNameCart = document.querySelector(".product-name-checkout");
+const productSizeContainer = document.querySelector(".product-size");
+const productPrice = document.querySelector(".checkout-item-price");
+const productTotal = document.querySelector(".checkout-items-price");
+const shippingCost = document.querySelector(".shipping-cost");
+const total = document.querySelector(".total");
+
+const url = `https://wp-rainydays.maweb.tech/wp-json/wc/store/products/${productId}`;
+
+async function getProduct() {
+  try {
+    const response = await fetch(url);
+    const getResults = await response.json();
+    console.log(getResults);
+    createHTML(getResults);
+  } catch (error) {
+    console.log(error);
+    cartContainer.innerHTML = "<p>Sorry, an error occured</p>";
+  }
+}
+getProduct();
+
+function createHTML(product) {
+  let shippingCostCalc = 0;
+  let itemCost = parseInt(`${product.prices.price}`);
+
+  productImg.src = `${product.images[0].src}`;
+  productNameCart.innerHTML = `${product.name}`;
+  productSizeContainer.innerHTML = `${productSize}`;
+  productPrice.innerHTML = `$${product.prices.price}`;
+  productTotal.innerHTML = `$${product.prices.price}`;
+
+  if (parseInt(itemCost) > 99) {
+    shippingCost.innerHTML += 0;
+    shippingCostCalc = 0;
+    total.innerHTML = itemCost + shippingCostCalc;
+  } else {
+    shippingCost.innerHTML += `${product.prices.currency_symbol} 69`;
+    shippingCostCalc = 69;
+    total.innerHTML = itemCost + shippingCostCalc;
+  }
+}
+
 const checkoutBtn = document.querySelector(".checkout-btn");
 
 const fullNameLabel = document.querySelector(".name");
