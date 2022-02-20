@@ -9,7 +9,6 @@ function validateEmail() {
   const emailRegEx =
     /^[a-zA-ZæøåÆØÅ0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
   let emailResult = emailRegEx.test(`${emailField.value}`);
-  console.log(emailResult);
 
   if (emailResult == true && emailField.value.length > 0) {
     emailField.classList.remove("incorrect");
