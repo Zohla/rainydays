@@ -64,6 +64,7 @@ addToCartBtn.addEventListener("click", (e) => {
     cartConfMessage.classList.remove("hide-msg");
     goToCheckout.classList.remove("hide-msg");
     sizeErrorMsg.classList.add("hide-msg");
+    checkoutLink.href += `&size=${pickedSize}`;
   } else {
     cartConfMessage.classList.add("hide-msg");
     sizeErrorMsg.classList.remove("hide-msg");
