@@ -69,34 +69,29 @@
         <div class="cart-content">
           <div class="cart-content-all">
             <div class="checkout-item-info">
-              <img
-                class="item-checkout-pic"
-                src="images/10925270096.jpg"
-                alt="Freja technical jacket"
-              />
+              <img class="item-checkout-pic" />
               <div>
-                <h3>Freja</h3>
-                <p><span class="color">color:</span> Deep teal</p>
-                <p><span>Size</span>40</p>
+                <h3 class="product-name-checkout"></h3>
+                <p class="product-size"><span>Size</span></p>
               </div>
             </div>
           </div>
-          <p class="checkout-item-price">NOK 1599</p>
+          <p class="checkout-item-price"></p>
           <p class="checkout-item-qty">1pc</p>
         </div>
         <div class="cart-summary">
           <p class="summary-head p-bold">Summary</p>
           <div class="summary-price">
             <p>Items</p>
-            <p>1599</p>
+            <p class="checkout-items-price"></p>
           </div>
           <div class="summary-price">
             <p>Shipping</p>
-            <p>69</p>
+            <p class="shipping-cost"></p>
           </div>
           <div class="summary-price">
             <p class="p-bold">Total</p>
-            <p class="p-bold">1668</p>
+            <p class="p-bold total"></p>
           </div>
         </div>
       </div>
@@ -117,7 +112,9 @@
         <label for="phone" class="phone">Phone:</label><br />
         <input type="text" id="phone" name="phone" /><br />
         <label for="card-num" class="card-num">Card number:</label><br />
-        <input type="card-num" id="card-num" name="card-num" />
+        <input type="card-num" id="card-num" name="card-num" /><br />
+        <label for="join-club" class="join-club">Join the customer club</label>
+        <input type="checkbox" id="join-club" name="join-club" />
       </form>
       <a href="checkoutsuccess.html" class="checkout-btn">Pay</a>
     </main>
