@@ -1,4 +1,4 @@
-# rainydays -school project
+# rainydays Noroff project
 
 Rainydays is a fictional company that sells clothes.
 
@@ -6,7 +6,7 @@ The project started as a style tile before it became a prototype.
 
 After that the assignment was to build it with HTML and CSS.
 
-The developer had to take the following in consideration when planning and building the page:
+What I had to take in consideration when planning and building the page:
 
 An online shop selling men's and women’s rain jackets. They are designed for a range of different outdoor activities such as hiking.
 
@@ -28,4 +28,5 @@ A checkout success
 About
 Contact
 
-Later we kept on building on the page adding JS and did a research project with interaction design to improve the page.
+We added JavaScript and did a research project with interaction design to improve the page.
+Uses Wordpress as a headless CMS and REST API.
