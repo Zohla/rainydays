@@ -1,32 +1,35 @@
-# rainydays Noroff project
+# Rainydays | A landing page and web store
 
-Rainydays is a fictional company that sells clothes.
+![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-The project started as a style tile before it became a prototype.
+A fictional companys web site made for a school assignment.
 
-After that the assignment was to build it with HTML and CSS.
+## Description
 
-What I had to take in consideration when planning and building the page:
+Made to showcase the ability to make responsive websites and work with a headless CMS(WP) and REST API.
 
-An online shop selling men's and women’s rain jackets. They are designed for a range of different outdoor activities such as hiking.
+## Built With
 
-Slogan:
-Pushing the Comfort Zone
+HTML/CSS, JavaScript, WordPress, REST API.
 
-Target audience:
-Men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing
+### Installing
 
-Unique selling points:
-The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.
+1. Clone the repo:
 
-Site architecture:
-Home
-List of Jackets
-A jacket specific page showing the jacket
-A checkout page
-A checkout success
-About
-Contact
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
 
-We added JavaScript and did a research project with interaction design to improve the page.
-Uses Wordpress as a headless CMS and REST API.
+2. You need to set up your own backend. Mine is made with WordPress as an headless CMS.
+
+## Contributing
+
+This project does not take contributions, but feel free to clone it and make something of it yourself.
+
+## Contact
+
+My inbox is always open, and I'm open to both job opportunities and collabs.
+
+[My Twitter page](www.twitter.com)
+
+[My LinkedIn page](www.linkedin.com)
