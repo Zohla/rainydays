@@ -3,6 +3,7 @@
   --medium-green: #3f626a;
   --dark-color: #0a3641;
   --contrast-color: #ce6000;
+  --desktop-font-size: 1.25rem;
 }
 * {
   margin: 0;
@@ -29,6 +30,8 @@ body {
   max-width: 1770px;
   margin: auto;
   height: 100%;
+  font-size: var(--desktop-font-size);
+  font-weight: 300;
 }
 
 h1 {
@@ -44,6 +47,9 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: var(--contrast-color);
   font-size: 2rem;
+}
+p {
+  font-weight: 300;
 }
 a {
   text-decoration: none;
