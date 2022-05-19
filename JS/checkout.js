@@ -5,10 +5,10 @@ const params = new URLSearchParams(querystring);
 const productId = params.get("id");
 const productSize = params.get("size");
 
-const cartContainer = document.querySelector(".cart-content");
+const cartContainer = document.querySelector("#cart");
 const productImg = document.querySelector(".item-checkout-pic");
-const productNameCart = document.querySelector(".product-name-checkout");
-const productSizeContainer = document.querySelector(".product-size");
+const productNameCart = document.querySelector(".product-name-cart");
+const productSizeCart = document.querySelector(".product-size");
 const productPrice = document.querySelector(".checkout-item-price");
 const productTotal = document.querySelector(".checkout-items-price");
 const shippingCost = document.querySelector(".shipping-cost");
@@ -38,7 +38,7 @@ function createHTML(product) {
 
   productImg.src = `${product.images[0].src}`;
   productNameCart.innerHTML = `${product.name}`;
-  productSizeContainer.innerHTML += `${productSize}`;
+  productSizeCart.innerHTML += `${productSize}`;
   productPrice.innerHTML = `$${product.prices.price}`;
   productTotal.innerHTML = `$${product.prices.price}`;
 
@@ -53,7 +53,7 @@ function createHTML(product) {
   }
 }
 
-const checkoutBtn = document.querySelector(".checkout-btn");
+const checkoutBtn = document.querySelector("#checkout-btn");
 
 const fullNameLabel = document.querySelector(".name");
 const adressLabel = document.querySelector(".adress");

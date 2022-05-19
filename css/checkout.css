@@ -2,38 +2,27 @@
   display: flex;
   flex-direction: column;
 }
-.cart-content {
+.item-card {
   display: flex;
-  width: 75%;
+  justify-content: space-between;
   padding: 1rem;
-  margin: auto;
-  justify-content: space-around;
   background-color: var(--light-color);
 }
-.checkout-item-info {
-  display: flex;
+.product-info {
+  margin-right: 2rem;
 }
-.checkout-item-info div {
-  text-align: center;
-  align-self: center;
+.product-info p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 .item-checkout-pic {
   max-height: 10rem;
 }
-.checkout-item-price,
-.checkout-item-qty {
-  align-self: center;
-}
-.product-name-checkout,
-.product-size {
-  margin-left: 0.5rem;
-}
 .cart-summary {
-  width: 200px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2rem auto;
+  margin: 2rem;
   border: 1px solid var(--dark-color);
 }
 .summary-head {
@@ -46,13 +35,16 @@
   justify-content: space-between;
 }
 .summary-price:last-child {
-  font-weight: 700;
+  font-weight: 500;
 }
 .payment-heading {
   margin: 1rem auto;
 }
 .payment-form {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: auto;
 }
 .payment-form input {
   background-color: var(--light-color);
@@ -82,17 +74,65 @@
 #phone {
   margin-bottom: 1rem;
 }
-.checkout-btn {
-  align-self: center;
-  width: 5rem;
-  color: var(--dark-color);
-  width: 6rem;
-  border: 1px solid var(--dark-color);
-  text-align: center;
-  padding: 1rem 0;
-  margin: 1rem;
+/* Checkbox*/
+#join-club {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-.checkout-btn:hover {
+
+/* Create a custom checkbox */
+#join-club {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#join-club:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+#join-club:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#join-club:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#join-club:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#join-club-cont #join-club:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#checkout-btn {
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  margin: 2rem 0;
+}
+#checkout-btn:hover {
   background-color: var(--dark-color);
   color: var(--light-color);
 }

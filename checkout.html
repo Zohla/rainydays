@@ -4,27 +4,14 @@
     <title>Rainydays | Checkout</title>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/checkout.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/b4befb0d1e.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Hotjar Tracking Code for https://rainydaysclothes.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2698378, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    
   </head>
   <body>
     <header>
@@ -64,59 +51,78 @@
       </nav>
     </header>
     <main class="vh-fix checkout-container">
-      <h1 class="h1-sub-pages">Checkout</h1>
-      <div>
-        <div class="cart-content">
-          <div class="cart-content-all">
-            <div class="checkout-item-info">
-              <img class="item-checkout-pic" />
-              <div>
-                <h3 class="product-name-checkout"></h3>
-                <p class="product-size"><span>Size: </span></p>
+      <section id="cart">
+        <h1 class="h1-sub-pages">Checkout</h1>
+        <div class="item-card">
+          <img class="item-checkout-pic" />
+          <div class="product-info">
+            <h3 class="product-name-cart"></h3>
+            <p class="product-size">Size:</p>        
+            <p class="checkout-item-price"></p>
+            <p class="checkout-item-qty">Qty: 1</p>
+          </div>
+        </div>
+        <section id="cart-summary">
+        </section>
+        <!-- <div>
+          <div class="cart-content">
+            <div class="cart-content-all">
+              <div class="checkout-item-info">
+                <img class="item-checkout-pic" />
+                <div>
+                  <h3 class="product-name-checkout"></h3>
+                  <p class="product-size"><span>Size: </span></p>
+                </div>
               </div>
             </div>
-          </div>
-          <p class="checkout-item-price"></p>
-          <p class="checkout-item-qty">1pc</p>
+            <p class="checkout-item-price"></p>
+            <p class="checkout-item-qty">1pc</p>
+          </div> -->
+          <section class="cart-summary">
+            <p class="summary-head p-bold">Summary</p>
+            <div class="summary-price">
+              <p>Items</p>
+              <p class="checkout-items-price"></p>
+            </div>
+            <div class="summary-price">
+              <p>Shipping</p>
+              <p class="shipping-cost"></p>
+            </div>
+            <div class="summary-price">
+              <p class="p-bold">Total</p>
+              <p class="p-bold total"></p>
+            </div>
+          </section>
         </div>
-        <div class="cart-summary">
-          <p class="summary-head p-bold">Summary</p>
-          <div class="summary-price">
-            <p>Items</p>
-            <p class="checkout-items-price"></p>
+      </section>
+      <section id="payment">
+
+        <h3 class="payment-heading">Payment</h3>
+        <form action="" class="payment-form">
+          <div class="payment-option">
+            <input type="radio" id="Visa" name="payment" value="visa" checked />
+            <label class="radio-text visa" for="visa">Visa</label>
+            <input type="radio" id="PayPal" name="payment" value="paypal" />
+            <label class="radio-text paypal" for="paypal">PayPal</label>
           </div>
-          <div class="summary-price">
-            <p>Shipping</p>
-            <p class="shipping-cost"></p>
+          <label for="name" class="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="adress" class="adress">Adress:</label>
+          <input type="text" id="adress" name="adress" />
+          <label for="po-box" class="po-box">PO-box:</label>
+          <input type="text" id="po-box" name="po-box" />
+          <label for="phone" class="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" />
+          <label for="card-num" class="card-num">Card number:</label>
+          <input type="card-num" id="card-num" name="card-num" />
+          <div id="join-club-cont">
+            <label for="join-club" class="join-club">Join the customer club</label>
+            <input type="checkbox" id="join-club" name="join-club" />
           </div>
-          <div class="summary-price">
-            <p class="p-bold">Total</p>
-            <p class="p-bold total"></p>
-          </div>
-        </div>
-      </div>
-      <h3 class="payment-heading">Payment</h3>
-      <form action="" class="payment-form">
-        <div class="payment-option">
-          <input type="radio" id="Visa" name="payment" value="visa" checked />
-          <label class="radio-text visa" for="visa">Visa</label><br />
-          <input type="radio" id="PayPal" name="payment" value="paypal" />
-          <label class="radio-text paypal" for="paypal">PayPal</label><br />
-        </div>
-        <label for="name" class="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
-        <label for="adress" class="adress">Adress:</label><br />
-        <input type="text" id="adress" name="adress" /><br />
-        <label for="po-box" class="po-box">PO-box:</label><br />
-        <input type="text" id="po-box" name="po-box" /><br />
-        <label for="phone" class="phone">Phone:</label><br />
-        <input type="text" id="phone" name="phone" /><br />
-        <label for="card-num" class="card-num">Card number:</label><br />
-        <input type="card-num" id="card-num" name="card-num" /><br />
-        <label for="join-club" class="join-club">Join the customer club</label>
-        <input type="checkbox" id="join-club" name="join-club" />
-      </form>
-      <a href="checkoutsuccess.html" class="checkout-btn">Pay</a>
+          <input type="submit" value="Pay" id="checkout-btn">
+        </form>
+<!--         <a href="checkoutsuccess.html" class="checkout-btn">Pay</a>
+ -->      </section>
     </main>
     <footer class="sub-page-footer">
       <ul class="first-footer-list">
