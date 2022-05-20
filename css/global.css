@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+}
 :root {
   --light-color: #e8edee;
   --medium-green: #3f626a;
@@ -11,11 +16,6 @@
   border: 0;
 }
 
-@font-face {
-  font-family: "Roboto", sans-serif;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
-}
 /* HIDE ON BIG SCREENS */
 .mobile {
   display: none;
@@ -223,6 +223,9 @@ footer {
   justify-content: space-between;
   margin-top: 3rem;
 }
+footer > * {
+  flex: 1;
+}
 .socials-footer li {
   margin-right: 2rem;
   font-size: 3rem;
@@ -234,10 +237,13 @@ footer {
   color: var(--contrast-color);
 }
 .first-footer-list {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 .second-footer-list {
-  margin-right: 1rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .first-footer-list li a,
 .second-footer-list li a {
@@ -311,9 +317,12 @@ footer {
   }
   .first-footer-list {
     order: 3;
+    margin-left: 1rem;
   }
   .second-footer-list {
     order: 2;
     margin-left: 1rem;
+    align-self: flex-start;
+    align-items: flex-start;
   }
 }
