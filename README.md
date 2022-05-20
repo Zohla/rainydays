@@ -20,7 +20,7 @@ HTML/CSS, JavaScript, WordPress, REST API.
 git clone git@github.com:NoroffFEU/portfolio-1-example.git
 ```
 
-2. You need to set up your own backend. Mine is made with WordPress as an headless CMS.
+2. You need to set up your own backend. Mine is made with WordPress as headless CMS.
 
 ## Contributing
 
