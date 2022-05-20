@@ -1,8 +1,9 @@
 # Rainydays | A landing page and web store
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
 A fictional companys web site made for a school assignment.
+
+<img src="https://github.com/Zohla/screenshots/blob/main/rainydays(1).png" alt="screenshot of the Rainydays page" width="600px">
+
 
 ## Description
 
@@ -17,7 +18,7 @@ HTML/CSS, JavaScript, WordPress, REST API.
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/Zohla/rainydays.git
 ```
 
 2. You need to set up your own backend. Mine is made with WordPress as headless CMS.
@@ -30,6 +31,6 @@ This project does not take contributions, but feel free to clone it and make som
 
 My inbox is always open, and I'm open to both job opportunities and collabs.
 
-[My Twitter page](www.twitter.com)
+[My Twitter page](https://twitter.com/MarenLilleberre)
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/maren-lilleberre-117406188)
